@@ -1,0 +1,19 @@
+.route-results { display: grid; gap: 7px; margin: 12px 0; }
+.route-card {
+  display: grid;
+  grid-template-columns: 8px 1fr auto auto;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+.route-card.active { border-color: #1d5cff; background: #eef4ff; box-shadow: 0 0 0 2px #1d5cff22; }
+.route-card .route-color { width: 6px; height: 30px; border-radius: 4px; grid-row: span 2; }
+.route-card strong { font-size: 13px; }
+.route-card span:last-child { grid-column: 2 / -1; color: #687386; }
+.data-files { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.data-files[hidden] { display: none; }
+.data-files a { padding: 6px 8px; border-radius: 7px; background: #edf3ff; color: #1d5cff; font-size: 11px; text-decoration: none; }
+#route-download { width: 100%; margin-top: 2px; }

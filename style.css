@@ -1,0 +1,225 @@
+*{box-sizing:border-box}body{margin:0;background:#f1f5f9;color:#183247;font:15px/1.6 "Segoe UI",system-ui,sans-serif}header{background:#132f43;color:white;padding:20px 4%;display:flex;justify-content:space-between;align-items:center}header b{font-size:27px;letter-spacing:-1px}header span{margin-left:20px;color:#c8dce8}main{max-width:1500px;margin:auto;padding:25px}.intro{display:flex;justify-content:space-between;gap:24px;padding:25px 0 30px}.eyebrow{color:#0d816f;font-weight:700}h1{font-size:36px;margin:8px 0}h2{font-size:19px;margin:0 0 16px}p{margin:10px 0}.weights{min-width:200px;display:grid;gap:6px;padding:18px;border-radius:12px;background:#e0eee9}.layout{display:grid;grid-template-columns:370px 1fr;gap:20px}aside,.map-panel,.explain{background:white;border:1px solid #dce5ed;border-radius:16px;padding:22px}label{display:block;font-weight:600;margin:14px 0 4px}select{width:100%;font:inherit;padding:11px;border:1px solid #bccbd6;border-radius:7px;background:white}button{font:inherit;border:1px solid #cedbe5;border-radius:7px;padding:8px 12px;background:#f6f9fc;color:#173c59;cursor:pointer}button:hover{background:#e4f0fa}.muted,small{font-size:12px;color:#657b8b}header small{color:#d2e0ea}.card{display:block;width:100%;text-align:left;margin:10px 0;padding:14px}.card.selected{border:2px solid #1785a6;background:#eef8fb}.card strong{display:block;font-size:16px}.card span{display:block}.badge{color:#08755f;font-weight:700}.warning{color:#9b550b}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px}canvas{width:100%;height:500px;background:#f5f7f6;border-radius:10px;touch-action:none;cursor:grab}.legend{font-size:12px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}.metric{background:#eff5f7;padding:14px;border-radius:9px}.metric b{display:block;font-size:22px;color:#164c62}.metric small{display:block}.explain{margin-top:22px}a{color:#176c94}#status{padding:12px;background:#eef5f8;border-radius:8px}@media(max-width:950px){.layout{grid-template-columns:1fr}.intro{display:block}.weights{margin-top:15px}header{display:block}header span{display:block;margin:0}h1{font-size:28px}main{padding:15px}.metrics{grid-template-columns:1fr}canvas{height:400px}}
+
+
+/* 카카오 장소 검색 영역 */
+.search-section {
+    margin-bottom: 20px;
+}
+
+.search-section h3 {
+    margin-bottom: 15px;
+}
+
+.search-section input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 10px;
+    border: 1px solid #ccd6dd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.search-section input:focus {
+    outline: 2px solid #087caa;
+    outline-offset: 1px;
+}
+
+.search-results {
+    margin-bottom: 12px;
+}
+
+.search-results button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    border: 1px solid #dce3e8;
+    border-radius: 6px;
+    background: #fff;
+    color: #263238;
+    cursor: pointer;
+}
+
+.search-results button:hover {
+    background: #edf6fa;
+}
+
+.search-results small {
+    display: block;
+    margin-top: 4px;
+    color: #667781;
+}
+
+#searchRoute {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #087caa;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#searchRoute:hover {
+    background: #06688e;
+}
+/* 출발·도착 입력 옆 교환 버튼 */
+.place-fields { display: grid; grid-template-columns: minmax(0, 1fr) 52px; column-gap: 10px; }
+.place-field { grid-column: 1; min-width: 0; }
+.swap-places { grid-column: 2; grid-row: 1 / span 2; align-self: center;
+    min-width: 44px; min-height: 64px; padding: 6px; background: #edf6fa;
+    border: 1px solid #bdd5df; color: #096b90; }
+.swap-places > span { display: block; font-size: 28px; line-height: 1.1; }
+.swap-places small { display: block; color: inherit; }
+.swap-places:focus-visible { outline: 3px solid #087caa; outline-offset: 3px; }
+
+/* 경로 비교: 기존 지도/검색 배치를 유지 */
+.score-guide { font-size: 14px; color: #526a7a; line-height: 1.6; }
+.score-guide strong { color: #173c59; }
+.route-summary { font-size: 14px; padding: 12px; background: #f0f6fa; border-radius: 8px; }
+.score-disclaimer { font-size: 12px; line-height: 1.6; color: #566c7a; }
+.live-card { border: 1px solid #cbd9e2; border-radius: 12px; background: white; padding: 16px; margin: 14px 0;
+    transition: border-color .15s, background-color .15s; }
+.live-card:hover { background: #f5f9fc; }
+.live-card:focus-visible { outline: 3px solid #087caa; outline-offset: 3px; }
+.live-card.is-recommended { border-color: #0a806e; background: #f3faf7; }
+.live-card.selected { border: 2px solid #087caa; padding: 15px; box-shadow: 0 0 0 2px #087caa14; }
+.live-card .card-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.live-card .route-name { font-size: 16px; line-height: 1.5; }
+.live-card .route-badge { display: inline-block; flex-shrink: 0; padding: 3px 8px; border-radius: 6px;
+    background: #edf2f6; color: #405d70; font-size: 12px; font-weight: 700; }
+.is-recommended .route-badge { color: #075b4e; background: #d6efe5; }
+.is-excluded .route-badge { color: #79480d; background: #fff0d8; }
+.live-card .easy-score-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin: 14px 0 5px; }
+.easy-score-label { font-size: 13px; color: #526a7a; }
+.easy-score-value { font-size: 30px; font-weight: 800; letter-spacing: -1px; line-height: 1.3; color: #174d68; }
+.score-total { font-size: 12px; font-weight: 500; letter-spacing: 0; color: #526a7a; }
+.is-pending .easy-score-value, .is-excluded .easy-score-value { font-size: 22px; }
+.live-card .easy-score-track { display: block; height: 5px; background: #e4edf2; border-radius: 8px; overflow: hidden; margin-bottom: 15px; }
+.live-card .easy-score-fill { display: block; height: 100%; background: #087caa; border-radius: 8px; }
+.is-recommended .easy-score-fill { background: #0a806e; }
+.is-excluded .easy-score-fill { background: #7c8e9b; }
+.live-card .route-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+.route-fact b { display: block; font-size: 15px; color: #193c52; overflow-wrap: anywhere; }
+.route-fact small { display: block; font-size: 12px; color: #526a7a; }
+.live-card .card-explanation { margin-top: 12px; font-size: 13px; line-height: 1.6; color: #365668; overflow-wrap: anywhere; }
+.is-excluded .card-explanation { color: #79480d; }
+.card-support { display: block; margin-top: 6px; color: #526a7a; font-size: 12px; }
+#searchStatus { padding: 10px 0; min-height: 2.5em; font-size: 14px; }
+#reason { font-size: 15px; line-height: 1.8; }
+@media (prefers-reduced-motion: reduce) { .live-card { transition: none; } }
+
+/* Desktop viewport layout. Smaller/zoomed screens retain normal page scrolling. */
+@media (min-width: 951px) and (min-height: 640px) {
+    html { height: 100%; }
+    body { height: 100vh; height: 100dvh; overflow: hidden; display: flex; flex-direction: column; }
+    body > header { flex: 0 0 auto; min-height: 48px; padding: 8px 24px; }
+    header b { font-size: 23px; }
+    header span { font-size: 13px; margin-left: 14px; }
+    main { flex: 1 1 0; min-height: 0; width: 100%; max-width: 1800px;
+        padding: 8px 16px 12px; display: flex; flex-direction: column; gap: 8px; }
+    .intro { flex: 0 0 auto; align-items: center; padding: 2px 0; gap: 16px; }
+    .intro .eyebrow, .intro p { display: none; }
+    .intro h1 { font-size: 22px; line-height: 1.4; margin: 0; }
+    .weights { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px;
+        min-width: 0; padding: 7px 12px; border-radius: 8px; font-size: 12px; }
+    .weights small { flex-basis: 100%; font-size: 11px; }
+    .layout { flex: 1 1 0; min-height: 0; grid-template-columns: minmax(310px, 350px) minmax(0, 1fr); gap: 12px; }
+    aside, .map-panel { min-width: 0; min-height: 0; padding: 14px; border-radius: 12px; }
+    aside { display: flex; flex-direction: column; overflow: auto; scrollbar-gutter: stable; }
+    aside > h2 { display: none; }
+    .search-section { flex: 0 1 auto; min-height: 0; max-height: 62%; overflow-y: auto;
+        margin-bottom: 6px; padding-right: 3px; }
+    .search-section h3 { margin: 0 0 4px; font-size: 16px; }
+    .search-section label { margin: 5px 0 2px; font-size: 13px; }
+    .search-section input { min-height: 40px; margin: 2px 0 4px; padding: 9px 10px; }
+    .search-results { margin-bottom: 2px; max-height: 140px; overflow-y: auto; }
+    .search-section select { min-height: 40px; padding: 8px; font-size: 13px; }
+    #detourHelp { margin: 5px 0; font-size: 12px; line-height: 1.45; }
+    #searchRoute { min-height: 40px; padding: 8px 12px; margin-top: 4px; }
+    #searchStatus { margin: 3px 0; padding: 3px 0; font-size: 12px; line-height: 1.45; }
+    aside > hr { flex: 0 0 auto; width: 100%; margin: 5px 0; border: 0; border-top: 1px solid #dce5ed; }
+    .recommend-section { flex: 1 1 0; min-height: 150px; display: flex; flex-direction: column; }
+    .recommend-section h3 { margin: 5px 0; font-size: 16px; }
+    .score-guide { margin: 3px 0; font-size: 12px; line-height: 1.4; }
+    .route-summary { margin: 4px 0; padding: 7px 9px; font-size: 12px; line-height: 1.4; }
+    .score-disclaimer { margin: 3px 0; font-size: 11px; }
+    #cards { flex: 1 1 0; min-height: 85px; overflow-y: auto; padding: 0 3px 3px; scrollbar-gutter: stable; }
+    .live-card { padding: 12px; margin: 8px 0; }
+    .live-card.selected { padding: 11px; }
+    .live-card .route-name { font-size: 14px; }
+    .live-card .easy-score-row { margin-top: 8px; }
+    .easy-score-value { font-size: 27px; }
+    .live-card .easy-score-track { margin-bottom: 9px; }
+    .live-card .card-explanation { margin-top: 8px; font-size: 12px; }
+    .map-panel { display: flex; flex-direction: column; overflow-y: auto; }
+    .toolbar { flex: 0 0 auto; gap: 8px; margin-bottom: 6px; }
+    .toolbar h2 { font-size: 17px; margin: 0; overflow-wrap: anywhere; }
+    .toolbar > div { display: flex; flex-shrink: 0; gap: 4px; }
+    .toolbar button { min-height: 36px; padding: 5px 9px; font-size: 13px; }
+    .map-panel canvas { flex: 1 1 0; width: 100%; height: 0; min-height: 150px; }
+    .map-panel > p { flex: 0 0 auto; margin: 4px 0; }
+    .map-panel > label { margin: 4px 0; font-size: 13px; }
+    .map-panel > .muted { font-size: 11px; line-height: 1.45; }
+    .metrics { flex: 0 0 auto; margin-top: 7px; gap: 6px; }
+    .metric { padding: 7px 12px; }
+    .metric b { font-size: 21px; }
+    #reason { font-size: 13px; line-height: 1.5; }
+}
+
+/* Three independent columns: search / candidate routes / map. */
+.recommend-panel { min-width: 0; background: white; border: 1px solid #dce5ed; border-radius: 12px; padding: 14px; }
+.recommend-panel #cards { overflow: visible; }
+@media (min-width: 1200px) and (min-height: 640px) {
+    main { max-width: 2000px; }
+    .layout { grid-template-columns: minmax(250px, 290px) minmax(290px, 330px) minmax(0, 1fr); align-items: stretch; }
+    .layout > aside .search-section { max-height: none; overflow: visible; flex: 0 0 auto; }
+    .layout > aside { overflow-y: auto; }
+    .layout > .recommend-panel { display: flex; flex-direction: column; min-height: 0; overflow: visible; }
+    .recommend-panel h3 { margin: 0 0 5px; font-size: 17px; }
+    .recommend-panel .score-guide { margin: 2px 0; font-size: 12px; }
+    .recommend-panel .route-summary { padding: 6px 8px; margin: 4px 0; font-size: 12px; }
+    .recommend-panel .score-disclaimer { margin: 2px 0 5px; font-size: 11px; }
+    .recommend-panel #cards { display: grid; align-content: start; gap: 7px; overflow: visible;
+        flex: 0 0 auto; min-height: 0; padding: 0; }
+    .recommend-panel .live-card { padding: 9px 11px; margin: 0; }
+    .recommend-panel .live-card.selected { padding: 8px 10px; }
+    .recommend-panel .route-name { font-size: 14px; }
+    .recommend-panel .route-badge { font-size: 11px; padding: 2px 6px; }
+    .recommend-panel .easy-score-row { margin: 5px 0 2px; }
+    .recommend-panel .easy-score-value { font-size: 26px; }
+    .recommend-panel .easy-score-track { height: 4px; margin-bottom: 6px; }
+    .recommend-panel .route-fact b { font-size: 14px; }
+    .recommend-panel .route-fact small { font-size: 11px; }
+    .recommend-panel .card-explanation { margin-top: 5px; font-size: 12px; line-height: 1.4; }
+    .recommend-panel .card-support { margin-top: 3px; font-size: 11px; }
+}
+/* Preserve access on narrow/short viewports rather than clipping cards. */
+@media (max-width: 1199px), (max-height: 739px) {
+    html { height: auto; }
+    body { display: block; height: auto; min-height: 100dvh; overflow: auto; }
+    main { display: block; height: auto; }
+    .layout { grid-template-columns: 1fr; height: auto; }
+    .layout > aside, .layout > .recommend-panel, .layout > .map-panel { overflow: visible; }
+    .search-section { max-height: none; overflow: visible; }
+    .recommend-panel #cards { overflow: visible; flex: 0 0 auto; }
+    .map-panel canvas { flex: 0 0 auto; height: 400px; min-height: 250px; }
+}
+
+/* 추천 경로 패널 내부 스크롤 수정 */
+@media (min-width: 1200px) and (min-height: 740px) {
+    .layout > .recommend-panel {
+        overflow: hidden;
+    }
+
+    .recommend-panel #cards {
+        flex: 1 1 0;
+        min-height: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-gutter: stable;
+    }
+}

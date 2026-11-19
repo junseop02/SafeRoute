@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafeRoute · 초보 운전자 AI 경로 추천</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 상단 헤더 -->
+    <header>
+        <div>
+            <b>SafeRoute</b>
+            <span>천안 · 아산 / 초보 운전자 경로 추천</span>
+        </div>
+
+        <small>카카오 장소 검색 · AI 경로 추천</small>
+    </header>
+
+
+    <main>
+
+        <!-- 서비스 소개 -->
+        <section class="intro">
+
+            <div>
+                <span class="eyebrow">
+                    천천히 가도, 운전하기 편한 길
+                </span>
+
+                <h1>시간보다 도로 환경을 먼저.</h1>
+
+                <p>
+                    사고다발지 부담이 낮고, 큰길 비중이 높으며,
+                    교차로 주변 부담이 적은 경로를 추천하는
+                    내비게이션 서비스입니다.
+                </p>
+            </div>
+
+            <div class="weights">
+                <b>55% 사고다발지</b>
+                <b>25% 좁은 길</b>
+                <b>20% 교차로</b>
+
+                <small>
+                    현재 AI 모델의 운전 부담 점수 산정 기준
+                </small>
+            </div>
+
+        </section>
+
+
+        <!-- 내비게이션 메인 화면 -->
+        <div class="layout">
+
+            <!-- 왼쪽: 경로 검색 및 추천 결과 -->
+            <aside>
+
+                <h2>어디로 갈까요?</h2>
+
+
+                <!-- 출발지 및 도착지 검색 -->
+                <div class="search-section">
+
+                    <h3>경로 검색</h3>
+
+                    <div class="place-fields">
+                    <div class="place-field">
+                    <!-- 출발지 검색 -->
+                    <label for="originSearch">
+                        출발지
+                    </label>
+
+                    <input
+                        type="text"
+                        id="originSearch"
+                        placeholder="출발지를 검색하세요"
+                        autocomplete="off"
+                    >
+
+                    <div
+                        id="originResults"
+                        class="search-results">
+                    </div>
+
+
+                    </div>
+                    <button type="button" id="swapPlaces" class="swap-places"
+                        aria-label="출발지와 도착지 바꾸기" title="출발지와 도착지 바꾸기">
+                        <span aria-hidden="true">⇅</span><small>교환</small>
+                    </button>
+                    <div class="place-field">
+                    <!-- 도착지 검색 -->
+                    <label for="destinationSearch">
+                        도착지
+                    </label>
+
+                    <input
+                        type="text"
+                        id="destinationSearch"
+                        placeholder="도착지를 검색하세요"
+                        autocomplete="off"
+                    >
+
+                    <div
+                        id="destinationResults"
+                        class="search-results">
+                    </div>
+                    </div>
+                    </div>
+
+
+                    <label for="cap">
+                        우회 허용 범위
+                    </label>
+
+                    <select id="cap" aria-describedby="detourHelp">
+
+                        <option value="1.5">
+                            조회 후보 최단 거리의 1.5배까지
+                        </option>
+
+                        <option value="2" selected>
+                            조회 후보 최단 거리의 2배까지
+                        </option>
+
+                        <option value="3">
+                            조회 후보 최단 거리의 3배까지
+                        </option>
+
+                        <option value="Infinity">
+                            거리 제한 없음
+                        </option>
+
+                    </select>
+                    <p id="detourHelp" class="muted" aria-live="polite">
+                        조회 후보 중 최단 거리의 2배 이내에서 AI 쉬움 점수가 높은 경로를 추천합니다.
+                    </p>
+
+                    <!-- 경로 찾기 버튼 -->
+                    <button
+                        type="button"
+                        id="searchRoute">
+                        경로 찾기
+                    </button>
+
+
+                    <!-- 검색 상태 메시지 -->
+                    <p
+                        id="searchStatus"
+                        class="muted"
+                        aria-live="polite">
+                        출발지와 도착지를 검색하여 선택해주세요.
+                    </p>
+
+                </div>
+
+
+
+
+
+
+
+
+                <!-- 기존 수집 경로 기능 임시 보존 -->
+                <!-- app.js 정리 전까지 삭제하지 않음 -->
+                <div id="legacyRouteControls" hidden>
+
+                    <h3>기존 수집 경로 비교</h3>
+
+                    <label for="origin">
+                        출발 지점
+                    </label>
+
+                    <select id="origin"></select>
+
+
+                    <label for="destination">
+                        도착 지점
+                    </label>
+
+                    <select id="destination"></select>
+
+
+
+
+
+                    <!-- 기존 비교 결과 저장 -->
+                    <button
+                        type="button"
+                        id="export">
+                        현재 비교 결과 JSON 저장
+                    </button>
+
+                </div>
+
+            </aside>
+
+                <!-- 추천 경로 영역 -->
+                <section class="recommend-section recommend-panel">
+
+                    <h3>추천 경로</h3>
+
+                    <p class="score-guide"><strong>높을수록 운전 부담이 낮은 경로</strong><br>
+                        AI 쉬움 점수는 100점 만점의 상대 비교 점수입니다.
+                    </p>
+                    <p id="routeSummary" class="route-summary" role="status" aria-live="polite">
+                        출발지와 도착지를 선택한 뒤 경로를 검색해주세요.
+                    </p>
+                    <p class="score-disclaimer">실제 사고 확률이나 안전을 보장하는 점수는 아닙니다.</p>
+
+                    <!-- 경로 추천 카드 -->
+                    <div id="cards"></div>
+
+                </section>
+
+
+
+            <!-- 오른쪽: 실시간 경로 지도 -->
+            <section class="map-panel">
+
+                <!-- 지도 상단 -->
+                <div class="toolbar">
+
+                    <h2 id="routeTitle">
+                        경로를 검색해주세요
+                    </h2>
+
+                    <!-- 지도 조작 버튼 -->
+                    <div>
+
+                        <button
+                            type="button"
+                            id="minus"
+                            aria-label="지도 축소">
+                            −
+                        </button>
+
+                        <button
+                            type="button"
+                            id="plus"
+                            aria-label="지도 확대">
+                            ＋
+                        </button>
+
+                        <button
+                            type="button"
+                            id="reset">
+                            전체 보기
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 자동차 경로 지도 -->
+                <canvas
+                    id="map"
+                    aria-label="자동차 경로 지도">
+                </canvas>
+
+
+                <!-- 지도 범례 -->
+                <p class="legend">
+                    ● 초록: 출발
+                    ● 빨강: 도착
+                    ━ 파랑: 자동차 경로
+                    ● 주황: 사고다발지
+                </p>
+
+
+                <!-- 사고다발지 표시 기능 -->
+                <label>
+                    <input
+                        type="checkbox"
+                        id="hotspots"
+                        checked
+                    >
+                    사고다발지 표시
+                </label>
+
+
+                <!-- 지도 안내 -->
+                <p class="muted">
+                    카카오모빌리티 자동차 경로를
+                    좌표 기반 지도에 표시합니다.
+                    휠로 확대·축소하고
+                    드래그로 이동할 수 있습니다.
+                    실제 주행 안내 기능은 아직 제공하지 않습니다.
+                </p>
+
+
+                <!-- 경로 분석 정보 -->
+                <div
+                    id="metrics"
+                    class="metrics">
+                </div>
+
+
+                <!-- 경로 추천 이유 -->
+                <p id="reason"></p>
+
+
+                <!-- 경로 조회 정보 -->
+                <p
+                    id="date"
+                    class="muted">
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- 기존 학습 데이터 및 공통 기능 유지 -->
+    <script src="data.js"></script>
+    <script src="core.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

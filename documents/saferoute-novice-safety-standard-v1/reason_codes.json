@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "reasons": [
+    {"code":"SR001","label":"사고다발구간 감소","template":"사고다발구간을 {distance_km}km 덜 지나갑니다."},
+    {"code":"SR002","label":"비보호 좌회전 감소","template":"비보호 좌회전이 {count}회 적습니다."},
+    {"code":"SR003","label":"U턴 회피","template":"U턴 {count}회를 피합니다."},
+    {"code":"SR004","label":"복잡 교차로 감소","template":"복잡 교차로가 {count}개 적습니다."},
+    {"code":"SR005","label":"차로 변경 감소","template":"짧은 구간 차로 변경이 {count}회 적습니다."},
+    {"code":"SR006","label":"합류 부담 감소","template":"고속 합류·분기 구간이 {count}개 적습니다."},
+    {"code":"SR007","label":"좁은 도로 감소","template":"좁은 생활도로를 {distance_km}km 덜 지나갑니다."},
+    {"code":"SR008","label":"악천후 위험 감소","template":"현재 날씨에서 위험도가 높은 구간을 {distance_km}km 피합니다."},
+    {"code":"SR009","label":"야간 시야 개선","template":"조명이 부족한 야간 구간이 {distance_km}km 적습니다."},
+    {"code":"SR010","label":"돌발구간 회피","template":"현재 사고·공사 구간을 피합니다."},
+    {"code":"SR011","label":"추가시간","template":"빠른 경로보다 약 {minutes}분 더 걸립니다."},
+    {"code":"SR012","label":"위험 감소 추정","template":"비교 경로보다 위험 노출이 약 {percent}% 낮게 추정됩니다."},
+    {"code":"SR013","label":"안전 우위 불확실","template":"후보 간 위험 차이가 모델 오차 범위 안에 있습니다."},
+    {"code":"SR014","label":"데이터 부족","template":"일부 구간의 최신 안전 데이터가 부족합니다."}
+  ]
+}

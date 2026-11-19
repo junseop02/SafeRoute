@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "profiles": [
+    {
+      "id": "novice_safe",
+      "label": "초보안전",
+      "description": "추정 사고위험과 어려운 조작을 우선해서 줄입니다.",
+      "risk_weight": 0.65,
+      "novice_complexity_weight": 0.25,
+      "extra_time_weight": 0.10,
+      "max_eta_ratio": 1.20,
+      "max_distance_ratio": 1.25,
+      "minimum_risk_reduction_for_detour": 0.10,
+      "candidate_route_limit": 20,
+      "display_route_limit": 3,
+      "duplicate_overlap_threshold": 0.80,
+      "highway_mainline_policy": "neutral",
+      "highway_merge_policy": "penalize",
+      "unprotected_left_policy": "strong_penalty",
+      "u_turn_policy": "strong_penalty",
+      "narrow_road_policy": "penalize_by_length",
+      "vulnerable_zone_policy": "time_and_exposure_aware"
+    },
+    {
+      "id": "novice_balanced",
+      "label": "초보균형",
+      "description": "안전성과 예상시간을 함께 고려합니다.",
+      "risk_weight": 0.50,
+      "novice_complexity_weight": 0.20,
+      "extra_time_weight": 0.30,
+      "max_eta_ratio": 1.15,
+      "max_distance_ratio": 1.20,
+      "minimum_risk_reduction_for_detour": 0.08,
+      "candidate_route_limit": 15,
+      "display_route_limit": 3,
+      "duplicate_overlap_threshold": 0.80
+    },
+    {
+      "id": "quick_with_safety_floor",
+      "label": "빠른안전",
+      "description": "위험 상한을 넘지 않는 후보 중 빠른 경로를 고릅니다.",
+      "risk_weight": 0.35,
+      "novice_complexity_weight": 0.15,
+      "extra_time_weight": 0.50,
+      "max_eta_ratio": 1.08,
+      "max_distance_ratio": 1.12,
+      "minimum_risk_reduction_for_detour": 0.05,
+      "candidate_route_limit": 10,
+      "display_route_limit": 2,
+      "duplicate_overlap_threshold": 0.85
+    }
+  ],
+  "global_rules": {
+    "hard_exclusions_apply_to_all_profiles": true,
+    "default_profile": "novice_safe",
+    "never_claim_zero_risk": true,
+    "fallback_when_confidence_low": "general_route_with_warning"
+  }
+}

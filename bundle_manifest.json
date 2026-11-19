@@ -1,0 +1,1306 @@
+{
+  "created_date": "2026-11-19",
+  "excludes_self": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 242,
+      "sha256": "70b3dac4202967d658dc72d28e39280b373af0fbcc3a3569659efa1df253cf47"
+    },
+    {
+      "path": "app.js",
+      "size_bytes": 42109,
+      "sha256": "55c0ac510156d3a95f4e2896497f3f6851b132d89dc1329c574228d6e9aeabcd"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/batch-collector.js",
+      "size_bytes": 21492,
+      "sha256": "4914b17fece94222681f9c7546dc8b0f8721fd2789dd49f2a7fcea4c2ec09494"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/data/points.csv",
+      "size_bytes": 15460,
+      "sha256": "4ff7ef193e164964b657ed089a3d50b98b8d8d5ec4c6ce516dbed958e5e782db"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/data/points.geojson",
+      "size_bytes": 40819,
+      "sha256": "d8e5601b8387df8e4864ebfa0d2bcc6f8733f2e10d2fc22bbd88cedf403706a7"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/data/points.json",
+      "size_bytes": 49055,
+      "sha256": "29d9d5e7f28f3ad42dca96e4895dac3b99fe4d87fdda413b64abe1dfae589c3d"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/locations.json",
+      "size_bytes": 49055,
+      "sha256": "29d9d5e7f28f3ad42dca96e4895dac3b99fe4d87fdda413b64abe1dfae589c3d"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/selected_pairs.json",
+      "size_bytes": 14333,
+      "sha256": "99eccc73df3de2fa35d3a8e4964265578ff836c895d3195c3be0082ca62174dd"
+    },
+    {
+      "path": "collectors/cheonan-asan-100-extension-20261013/settings.json",
+      "size_bytes": 524,
+      "sha256": "9b614583b471f8109bd70eccf1243984c90c91dfb23efd52f4310be7ff14855b"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/batch-collector.js",
+      "size_bytes": 20851,
+      "sha256": "ca0d59de2dad69a935e3506c65d8af38a2d99242a978db65fe2173029225d032"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/config/locations.json",
+      "size_bytes": 7161,
+      "sha256": "86a425d4ae0d5846ae094696bbdf8aa5cda5feaff2c0dc473be4c83f1d18e19b"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/config/settings-extended.example.json",
+      "size_bytes": 739,
+      "sha256": "089101b0d7f01f4dd3cbc494fdf7ac3fb191ee54889e2128e7d0294d9bde554f"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/data/points.csv",
+      "size_bytes": 7766,
+      "sha256": "09b8e46e638e8b20b541e0b9d220c0459bacea265db246410a0b837ba342267e"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/data/points.geojson",
+      "size_bytes": 19737,
+      "sha256": "c6fa8e6582416be6e8409e6c790aee4d0f7879987c9b52677f5d98e3ac030ed8"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/data/points.json",
+      "size_bytes": 19328,
+      "sha256": "83341c9b4c2f893bf61469f49d3d4df39fa635b44df988b77e414e35f3490839"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/OPEN_결과폴더.cmd",
+      "size_bytes": 41,
+      "sha256": "ab1ada11d65a70b7e86c9fd95d3d8040fd1f833b8f259080c27537dd24de4b00"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/prepare-plan.js",
+      "size_bytes": 1938,
+      "sha256": "b4a37f4f37e801276813000d262c12d16b3bc9506027ad800c00b14f4c72f6e9"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/README.md",
+      "size_bytes": 4311,
+      "sha256": "0c912fa2481e70c598f828e311e622d72a3c763e92319b2d223edbfbfc6d2802"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/run.ps1",
+      "size_bytes": 1482,
+      "sha256": "b1c4398e8b698e8f88a0e452f1c353c01d9f81d6e8d147de69a472045be4b78c"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/settings.json",
+      "size_bytes": 524,
+      "sha256": "9b614583b471f8109bd70eccf1243984c90c91dfb23efd52f4310be7ff14855b"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/START_천안아산_자동수집.cmd",
+      "size_bytes": 173,
+      "sha256": "960f69adc29e7adc150a5df85efff59feb94cea62ef4768ba59acebeadb085ae"
+    },
+    {
+      "path": "collectors/cheonan-asan-kakao-batch-v1/검증결과.txt",
+      "size_bytes": 609,
+      "sha256": "aaebf0c3a039c3e5fd928b0a166f414198922d3e88befbdd71f27f4e2390bc1f"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/batch-collector.js",
+      "size_bytes": 21492,
+      "sha256": "4914b17fece94222681f9c7546dc8b0f8721fd2789dd49f2a7fcea4c2ec09494"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/data/points.csv",
+      "size_bytes": 10655,
+      "sha256": "41aa81576c8b0b0e182f2b7e466c3f79c980e66d410d692b314ac651e03a7fdc"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/data/points.geojson",
+      "size_bytes": 27802,
+      "sha256": "784e88adda5de0e39f9f5143820c66149d0fbbbaaa2f3b54c5ee524a71fde19f"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/data/points.json",
+      "size_bytes": 31108,
+      "sha256": "fbf195f4a7b375e7db330f2fb21df4f45b8ab5445c9294381b9a4e454a2706be"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/locations.json",
+      "size_bytes": 31108,
+      "sha256": "fbf195f4a7b375e7db330f2fb21df4f45b8ab5445c9294381b9a4e454a2706be"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/selected_pairs.json",
+      "size_bytes": 21067,
+      "sha256": "cc4e9336b80217f59d48b3ddd8af38b23f2b26387d90fc49eee0bfa4a9018547"
+    },
+    {
+      "path": "collectors/cheonan-asan-poi-extension-20261013/settings.json",
+      "size_bytes": 524,
+      "sha256": "9b614583b471f8109bd70eccf1243984c90c91dfb23efd52f4310be7ff14855b"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/app.js",
+      "size_bytes": 9639,
+      "sha256": "140178d3af0100ee9ccdd4d7a892a59b8f6d9a84f008cc9835063a5976d05d5d"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/config.yaml",
+      "size_bytes": 119,
+      "sha256": "b2909aa9a8056d97608964eed2315383cfb1beba1acc066c4ef6a96f92902a71"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/index.html",
+      "size_bytes": 3092,
+      "sha256": "ca26ac8b0eb4aa8c19e0bdf7ab05844506d294549f04f939d2d03c24e37ce13f"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/README.md",
+      "size_bytes": 2357,
+      "sha256": "dbbb17c27cb8569e974b64df14cde650f117b65c4f0903b6f159f424687cbb72"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/route-ui.css",
+      "size_bytes": 841,
+      "sha256": "c0fb288db8b7f7f87ecf054d9b57b6cb04fc06ba80d291e05cec6db0eb180131"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/run.ps1",
+      "size_bytes": 1178,
+      "sha256": "75fc77b33443384e5ccacb96918db979bd8981dbf34923e53fe29c7dfcbcce25"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/server.js",
+      "size_bytes": 11750,
+      "sha256": "2a7385ddbc7ad5dd4c14607ac4a770a7c591077868312521f9c92227e0453905"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/START_카카오내비_수집기.cmd",
+      "size_bytes": 138,
+      "sha256": "c80cada7d6e13d25a6e74dc5469b5ceddefd9c56a5aa0ed2bbe35b2e19b6ca5d"
+    },
+    {
+      "path": "collectors/kakao-navi-data-collector-v1/styles.css",
+      "size_bytes": 3244,
+      "sha256": "e760376507e8c4ca72a597b5d47fea216734f79bd894eda988aaa25fbdab79e5"
+    },
+    {
+      "path": "core.js",
+      "size_bytes": 3567,
+      "sha256": "9d4af16cb9cfb7840a25ac09e30747080b45b26f97dda75b28e497bb360f1b68"
+    },
+    {
+      "path": "data/accident_hotspots.json",
+      "size_bytes": 91777,
+      "sha256": "cf75f04875671e6de11d00adf21b5bfe907c0057e63d228564d41f03a11f57b6"
+    },
+    {
+      "path": "data/legacy/processed/accident_distance_cheonan_asan.parquet",
+      "size_bytes": 596858,
+      "sha256": "0860bbc1fba09d68f95d5a41d890d3d87ef7f2f2b502d33bc6ab178a3ee74dd7"
+    },
+    {
+      "path": "data/legacy/processed/accident_points_cheonan_asan.parquet",
+      "size_bytes": 57795,
+      "sha256": "ca30091ce1c85d39ff574b473dad7604d100453eecb315ce1663d2c80289e270"
+    },
+    {
+      "path": "data/legacy/processed/features_cheonan_asan.parquet",
+      "size_bytes": 1450527,
+      "sha256": "e8b942ee61f88354b702ed6fc8e32544f3b158921f074be22320d4ab97607b3e"
+    },
+    {
+      "path": "data/legacy/processed/intersection_features_cheonan_asan.parquet",
+      "size_bytes": 1118359,
+      "sha256": "42556a61a901961aa646e6adabe0ba9c00685a77b344495c6c329d87b29b5516"
+    },
+    {
+      "path": "data/legacy/processed/links.geojson",
+      "size_bytes": 11803242,
+      "sha256": "d664aa81a464d4919fa88beb4bb76741efb9b701c22aa4c84f8abb642d75bfeb"
+    },
+    {
+      "path": "data/legacy/processed/links_cheonan_asan.parquet",
+      "size_bytes": 4085580,
+      "sha256": "9c0701505c1b7013bc65b3d57e7ea1915ba938c45e9b485fe4a35db819267bd5"
+    },
+    {
+      "path": "data/legacy/processed/nodes_cheonan_asan.parquet",
+      "size_bytes": 881745,
+      "sha256": "cfc93d6e5afee52b42f361902f3e74087d57011e3c670dfdbe204dfe37bef32d"
+    },
+    {
+      "path": "data/legacy/processed/road_features_cheonan_asan.parquet",
+      "size_bytes": 1070536,
+      "sha256": "949b7402fbc84d9164d71edf6ac7a4df7851781c8775c901189ddaabb8285c49"
+    },
+    {
+      "path": "data/legacy/processed/traffic_features_cheonan_asan.parquet",
+      "size_bytes": 1155578,
+      "sha256": "5bdab75fdb09e4f9e18e787b77894b8330de9716c81ac48f1b8c11743ff6d8cb"
+    },
+    {
+      "path": "data/legacy/processed/traffic_points_cheonan_asan.parquet",
+      "size_bytes": 24045,
+      "sha256": "8999a7d08ef273baa637f830b1a7de923c4d28030e87eea115e29cb4d8fa8d7b"
+    },
+    {
+      "path": "data/legacy/raw/accident/12_25_bicycle.csv",
+      "size_bytes": 5632428,
+      "sha256": "5a0ea07ab1bac4e046725db20e0148df6bb9c7a822722ec8c7e0c626648621ab"
+    },
+    {
+      "path": "data/legacy/raw/accident/12_25_child.csv",
+      "size_bytes": 1373029,
+      "sha256": "c0f6e950e02ce00cd2318e205693c89a1349454abc78f099d9e69f84276faf3f"
+    },
+    {
+      "path": "data/legacy/raw/accident/12_25_oldman.csv",
+      "size_bytes": 6675323,
+      "sha256": "0f8f7e5ebc05769f12e1b964ac8d601250bf474f571ff5f4a90d397a6cfddefa"
+    },
+    {
+      "path": "data/legacy/raw/accident/12_25_schoolzone.csv",
+      "size_bytes": 725249,
+      "sha256": "5e135a79977efdd1aa8f50785f63ff13f8669a6127d19ae87530a9981f446ad5"
+    },
+    {
+      "path": "data/legacy/raw/accident/13_25_freezing.csv",
+      "size_bytes": 739073,
+      "sha256": "6d68c5b747707078330faf4c86be0b25dacb77598dddcfe60961a443de25380e"
+    },
+    {
+      "path": "data/legacy/raw/accident/15_25_tmzon.csv",
+      "size_bytes": 661136,
+      "sha256": "d3621abece041b4e6d082f6ab7422a2a4e2ebc0a0e567d2ed657d4642ec1e1da"
+    },
+    {
+      "path": "data/legacy/raw/accident/17_25_lg.csv",
+      "size_bytes": 6443231,
+      "sha256": "4ff244e0f57fb835a21c8feb48cfed82f3c6bd815cd8ede96f342c43544bb0c8"
+    },
+    {
+      "path": "data/legacy/raw/accident/17_25_motorcycle.csv",
+      "size_bytes": 3423913,
+      "sha256": "fd9af8e12fded9b940163d26c4efd8b420a26fce27e9109e37652b6927d2adad"
+    },
+    {
+      "path": "data/legacy/raw/accident/17_25_violt.csv",
+      "size_bytes": 8241308,
+      "sha256": "58b633e39bcc962fa4d78e327a7f2182f262959cf68c67ffe1505c33cf5a654d"
+    },
+    {
+      "path": "data/legacy/raw/accident/19_25_drunk.csv",
+      "size_bytes": 1389900,
+      "sha256": "52ccf258525f466aa1581978627692c30b077845f50ca5597e3942d003e85ece"
+    },
+    {
+      "path": "data/legacy/raw/accident/19_25_pedstrians.csv",
+      "size_bytes": 2584400,
+      "sha256": "deb63d6e89418590df3245655a0173bb7a0f66eddee9d282cbbb3a1b33175929"
+    },
+    {
+      "path": "data/legacy/raw/accident/19_25_truck.csv",
+      "size_bytes": 946362,
+      "sha256": "26bfad67b8683fc8dd445f676786747ae4aae2158192c25cf68b2b0fb1165973"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_성연령별인구.csv",
+      "size_bytes": 7933680,
+      "sha256": "de3645b017c1f3cf5bd86e96d7ea22208bd34fd5f4f3bab7c8dbb4351efc14b2"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_인구총괄(노년부양비).csv",
+      "size_bytes": 121197,
+      "sha256": "3e58e8c19f748efcacee694e4fc3c3e6ea094dca17edf54860a537566f761ace"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_인구총괄(노령화지수).csv",
+      "size_bytes": 125215,
+      "sha256": "13c8b453ee6180f3110ff6ee81394dc3509d83dd403bbfc25bb4a7d956024d2b"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_인구총괄(유년부양비).csv",
+      "size_bytes": 119341,
+      "sha256": "f0bfea9e69a9f79b71de20a6872cb385d679dbf25cf9edf08397ea7ab4a1cf6a"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_인구총괄(인구밀도).csv",
+      "size_bytes": 126832,
+      "sha256": "f49dd7b44c122348a15d6474abcbeddc55ffc2df6fc9505b35090db52841ecea"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_인구총괄(총인구).csv",
+      "size_bytes": 369208,
+      "sha256": "f1189732e02917014f6814c3a650e3097d9f78d7c032573ace533ef90d8a8a9d"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/1.2024년 행정구역 통계(인구)/2025년기준_2024년_인구총괄(평균나이).csv",
+      "size_bytes": 120921,
+      "sha256": "4b3166efa78f3a461747a27824b63af42fbc6969e36b97a4641149ebb10011e8"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/2.2024년 행정구역 통계(가구)/2025년기준_2024년_가구총괄.csv",
+      "size_bytes": 239187,
+      "sha256": "f3649951ae0e3877fed2fac41b7fb426e0f5e56d8f2b5efef3b5ab50ce735c80"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/2.2024년 행정구역 통계(가구)/2025년기준_2024년_세대구성별가구.csv",
+      "size_bytes": 699783,
+      "sha256": "7f7259677163d0f4446b5fc95cbdd5bf11c313c156e60d853e71e545a7d5fd45"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/3.2024년 행정구역 통계(주택)/2025년기준_2024년_건축년도별주택.csv",
+      "size_bytes": 2269383,
+      "sha256": "0f2c03ca49edc74abeb71a227900e5b2a284a764b3036e6a02fa01f934bcee0a"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/3.2024년 행정구역 통계(주택)/2025년기준_2024년_연건평별주택.csv",
+      "size_bytes": 1101159,
+      "sha256": "ea81ac8cfaf65b8e84be5a1bfdecc631f22798189ce04c22d9b0f79599950dae"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/3.2024년 행정구역 통계(주택)/2025년기준_2024년_주택유형별주택.csv",
+      "size_bytes": 655705,
+      "sha256": "8405d6ce46138bfb20e12800087100bb058b26289ff80eab0f0b2c76e7299b91"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/3.2024년 행정구역 통계(주택)/2025년기준_2024년_주택총괄_총주택(거처)수.csv",
+      "size_bytes": 121999,
+      "sha256": "fa7df8ccf9c433ac10fa2911feb35a422c270ba68e4e636acfe99f5411d757fe"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/4.2024년 행정구역 통계(사업체,종사자)/2025년기준_2024년_산업분류별(11차_대분류)_사업체수.csv",
+      "size_bytes": 2033642,
+      "sha256": "d6839551532b34bea533c25f6adb133e18371093cf41b68bfda5556ffa78f7b7"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/4.2024년 행정구역 통계(사업체,종사자)/2025년기준_2024년_산업분류별(11차_대분류)_종사자수.csv",
+      "size_bytes": 2215815,
+      "sha256": "f5aeb6d90e625f46559635a6a81d355b314098a6b7bd741a73cd1a8a9467bb09"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/4.2024년 행정구역 통계(사업체,종사자)/2025년기준_2024년_산업분류별(11차_대분류)_총괄사업체수.csv",
+      "size_bytes": 120351,
+      "sha256": "6959bae49054539263e34abd48b24948cad1bd52c22cd8042321dfcceeac3691"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/4.2024년 행정구역 통계(사업체,종사자)/2025년기준_2024년_산업분류별(11차_대분류)_총괄종사자수.csv",
+      "size_bytes": 122166,
+      "sha256": "a7045b5974f3b3a95b6adc11d5f1411e6d7e4d04426535079fd6afb1bbb2d2d1"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/4.2024년 행정구역 통계(사업체,종사자)/2025년기준_2024년_산업분류별(11차_중분류)_사업체수.csv",
+      "size_bytes": 5534819,
+      "sha256": "25be21c8fa3d79e3768078930a1d179b61d4baea0b0c4ad600c3f61d5142bdae"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/1. 통계/4.2024년 행정구역 통계(사업체,종사자)/2025년기준_2024년_산업분류별(11차_중분류)_종사자수.csv",
+      "size_bytes": 6070767,
+      "sha256": "19e3da3d333f16a80baeff789d8924a0d989a2f78ffd83d9f7cd6759aa143607"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/1. 2025년 2분기 기준 시도 경계/bnd_sido_00_2025_2Q.cpg",
+      "size_bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/1. 2025년 2분기 기준 시도 경계/bnd_sido_00_2025_2Q.dbf",
+      "size_bytes": 742,
+      "sha256": "37584ab7f943cffb14f81f7ddde5284529d7e82644b667e88d70f5b3d116819a"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/1. 2025년 2분기 기준 시도 경계/bnd_sido_00_2025_2Q.prj",
+      "size_bytes": 435,
+      "sha256": "e21b26451491c617318aab7d28abf4d07f5facc2aed1564e082ec8d4268cfa3b"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/1. 2025년 2분기 기준 시도 경계/bnd_sido_00_2025_2Q.shp",
+      "size_bytes": 86988364,
+      "sha256": "8edb33f1f633002a41f9bc407943cbebf0c2d8d5b3c18bd3fa5eb41aabe7e77e"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/1. 2025년 2분기 기준 시도 경계/bnd_sido_00_2025_2Q.shx",
+      "size_bytes": 236,
+      "sha256": "e70c77ef6c164fe1d3596326b05e700055c7f5267feeaad9defa6936c7f436ea"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/2. 2025년 2분기 기준 시군구 경계/bnd_sigungu_00_2025_2Q.cpg",
+      "size_bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/2. 2025년 2분기 기준 시군구 경계/bnd_sigungu_00_2025_2Q.dbf",
+      "size_bytes": 9958,
+      "sha256": "18f7d3a5f0fd8cf12e4a5deca3faf52133db4f7221dfbeccedf94ec06b58ece6"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/2. 2025년 2분기 기준 시군구 경계/bnd_sigungu_00_2025_2Q.prj",
+      "size_bytes": 435,
+      "sha256": "e21b26451491c617318aab7d28abf4d07f5facc2aed1564e082ec8d4268cfa3b"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/2. 2025년 2분기 기준 시군구 경계/bnd_sigungu_00_2025_2Q.shp",
+      "size_bytes": 97462924,
+      "sha256": "85523b10411652aa6b5c286a82eff7e77c7e563d5f644eb62a221a121f7e3968"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/2. 2025년 2분기 기준 시군구 경계/bnd_sigungu_00_2025_2Q.shx",
+      "size_bytes": 2116,
+      "sha256": "9fbaeb394ffde8be2fce4e47f2420ac63942fbbdf6c15cf2c71ac69136b9428c"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/3. 2025년 2분기 기준 행정동 경계/bnd_dong_00_2025_2Q.cpg",
+      "size_bytes": 5,
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/3. 2025년 2분기 기준 행정동 경계/bnd_dong_00_2025_2Q.dbf",
+      "size_bytes": 149608,
+      "sha256": "55ef3b6114e10424bc2e0e35e99b4ae0cf0d2c55ab9a8afe9a063337c894f266"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/3. 2025년 2분기 기준 행정동 경계/bnd_dong_00_2025_2Q.prj",
+      "size_bytes": 435,
+      "sha256": "e21b26451491c617318aab7d28abf4d07f5facc2aed1564e082ec8d4268cfa3b"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/3. 2025년 2분기 기준 행정동 경계/bnd_dong_00_2025_2Q.shp",
+      "size_bytes": 135002820,
+      "sha256": "8f5dec93ce06be03402d24c69b7f4643386945ba291cbc9e0b59b4fee992371d"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/2. 경계/3. 2025년 2분기 기준 행정동 경계/bnd_dong_00_2025_2Q.shx",
+      "size_bytes": 28572,
+      "sha256": "b04b98b8807bff242506fb1cad2b9cc38c23e4e855f5fc4a47850a27145e4d6b"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/3. 코드집/1. 행정구역별 격자코드 매핑(adm_grid_mapping).xlsx",
+      "size_bytes": 21547,
+      "sha256": "6f8059a20d3cb9d8618058ce9e18e3b7dc6a307dabcfa51cfabe43869920c1a9"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/3. 코드집/2. 제공용 코드(statistics_code).xlsx",
+      "size_bytes": 82573,
+      "sha256": "6ef68a83b56a8ecb43d8130dcc15abc81cdcc6c6e2894748953ca9232ad68b06"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/3. 코드집/3. 통계자료 이용안내(statistics_guide).hwpx",
+      "size_bytes": 51579,
+      "sha256": "a5ed23775e35eaf6e58f1a7b9adc1ea767d766b58cefc375000a79b3e93708a4"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/3. 코드집/4. 공간정보 설계서(db_schema).hwpx",
+      "size_bytes": 49100,
+      "sha256": "9c807f23ecfff3111e78ffd4c35a205804ee2e4d7341fd35d3211a3041d4f56a"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/4. (참고1) SGIS 소지역 통계 이용매뉴얼/SGIS 소지역 통계 이용매뉴얼(영문).hwpx",
+      "size_bytes": 30651950,
+      "sha256": "1dee4d14ae574b8fb13904d72a617496dd0954eeaacb70bebf5527a991b4c7e1"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/4. (참고1) SGIS 소지역 통계 이용매뉴얼/SGIS 소지역 통계 이용매뉴얼(한글).hwpx",
+      "size_bytes": 12392011,
+      "sha256": "a8f450139f3bf597371ad8499155d46de91ddf90b61d815ff99c15dbea40c048"
+    },
+    {
+      "path": "data/legacy/raw/boundary/국가데이터처_SGIS 행정구역 통계 및 경계_20250630/국가데이터처_SGIS 행정구역 통계 및 경계/5. (참고2) SGIS 소지역 통계 분석사례집.hwpx",
+      "size_bytes": 32980306,
+      "sha256": "4f6ff91a13b8c8a097db5d617e34a942224b2b2228468294da31501c1d136745"
+    },
+    {
+      "path": "data/legacy/raw/camera/전국무인교통단속카메라표준데이터.csv",
+      "size_bytes": 9099666,
+      "sha256": "613ac7be5723fb67f94de29869398ff661494f00f91c9fde596624f2fb464f04"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_LINK.cpg",
+      "size_bytes": 3,
+      "sha256": "3033cf66fa728da7a2940d823aad8118fb40687ebfad1147c313478b2baafe4b"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_LINK.dbf",
+      "size_bytes": 335907246,
+      "sha256": "2f324d13fd598cf987a48788ec92c8ec96c5a177ba6401fe82a1b09e2030e432"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_LINK.prj",
+      "size_bytes": 410,
+      "sha256": "1c8a54c46851660d21b9e0a4c5a23cf506369ef7856c786d39319910906986f5"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_LINK.shp",
+      "size_bytes": 276191336,
+      "sha256": "4cf3cc17b52c42f901e147a7ac9ae15d5ec6d606a674e2b6bfa1a50473978ae1"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_LINK.shx",
+      "size_bytes": 12498948,
+      "sha256": "74c01697d7c2237b2fe2f2b2bd9344459a39afa14acb08ad8853162be9de7557"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_NODE.cpg",
+      "size_bytes": 3,
+      "sha256": "3033cf66fa728da7a2940d823aad8118fb40687ebfad1147c313478b2baafe4b"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_NODE.dbf",
+      "size_bytes": 166849679,
+      "sha256": "82db37e7a0c0da7ef7fcb3e899920d68003af6c4523139e35a115cec6145e7a3"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_NODE.prj",
+      "size_bytes": 410,
+      "sha256": "1c8a54c46851660d21b9e0a4c5a23cf506369ef7856c786d39319910906986f5"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_NODE.shp",
+      "size_bytes": 33133312,
+      "sha256": "9ac06baa7e7fd720a248f1522ba642ebfdf073151db257016a08ebced63d662a"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MOCT_NODE.shx",
+      "size_bytes": 9466732,
+      "sha256": "9e42a65bbf0c85ee681122756668dfce505e11cd37bdc973a36a1ae0d8e7b4eb"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/MULTILINK.dbf",
+      "size_bytes": 1801250,
+      "sha256": "33521bd392a6e0cd480a68b74fd0d1419d84a96983231f9a6b38c0473cb1a5c8"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/TURNINFO.dbf",
+      "size_bytes": 3307683,
+      "sha256": "56f2d1361818db038d7c1490a7778d405a2cc8c189a71a92108753602a133c3f"
+    },
+    {
+      "path": "data/legacy/raw/nodelink/[2026-09-14]NODELINKDATA/내역서.csv",
+      "size_bytes": 4678,
+      "sha256": "23ad47e3d3f7c1e7865470606fabcd104ea571ef2bd88759cff3d853f611d0bd"
+    },
+    {
+      "path": "data/legacy/raw/protection_zone/전국노인장애인보호구역표준데이터.csv",
+      "size_bytes": 908118,
+      "sha256": "5688a52d504043b22f531a2affdb3e0d6bf40a8d11f4f1a9487c4a6179be0774"
+    },
+    {
+      "path": "data/legacy/raw/protection_zone/전국어린이보호구역표준데이터.csv",
+      "size_bytes": 2775757,
+      "sha256": "d77a75fafb63d48676cacae2ecc63ad0ba7335caa5a275c689b322324e0fd409"
+    },
+    {
+      "path": "data/legacy/raw/traffic/2025년 도로 종류별 교통량/2025년 도로종류별 교통량 및 X,Y좌표.xlsx",
+      "size_bytes": 103502013,
+      "sha256": "7ec335e20c335dacc9b4c0fa80c17acbc8dfaa258ae1cfe1a0a158f053fec671"
+    },
+    {
+      "path": "data/legacy/routes_100/additional_selected_pairs.json",
+      "size_bytes": 20634,
+      "sha256": "95c69d42b8ef45ed8ee816afe6ad0caa9e20d8c99c92629c90aee6a1a7144df0"
+    },
+    {
+      "path": "data/legacy/routes_100/collection_manifest.json",
+      "size_bytes": 1511,
+      "sha256": "61fa97df2e376785a852daa59660d35d7e0a1c56f9a64a09e0c0455d741160fd"
+    },
+    {
+      "path": "data/legacy/routes_100/guides_unique.csv",
+      "size_bytes": 14489213,
+      "sha256": "bd7b5d474c390badef48db65f2b05ec9b8e7ab6a62b9cd553c7b96c625dbd679"
+    },
+    {
+      "path": "data/legacy/routes_100/missing_requests.csv",
+      "size_bytes": 55,
+      "sha256": "45be009f44dde00259bfb5b23fbaab29fb852655346d5c7141bef556724f87f5"
+    },
+    {
+      "path": "data/legacy/routes_100/new_32_places.csv",
+      "size_bytes": 9020,
+      "sha256": "b5c329f278b51214158ac14bbbd1e2933077a5384cab8557ee6311097c0077a5"
+    },
+    {
+      "path": "data/legacy/routes_100/place_sources.md",
+      "size_bytes": 1045,
+      "sha256": "0f0b53ece842cbba66924249a100f257c7399976974c53de8901e128cfe2067f"
+    },
+    {
+      "path": "data/legacy/routes_100/poi_places.csv",
+      "size_bytes": 14605,
+      "sha256": "6b4825c45b4b550bc5a31abdf27ebce9de1282937043e0b586a01efdaa5a7ae6"
+    },
+    {
+      "path": "data/legacy/routes_100/point_review.csv",
+      "size_bytes": 13497,
+      "sha256": "6eff962b897262ac41f97032950ed4beb5bf0f49cf2965b2187246f92c4a9fc9"
+    },
+    {
+      "path": "data/legacy/routes_100/points.csv",
+      "size_bytes": 15460,
+      "sha256": "4ff7ef193e164964b657ed089a3d50b98b8d8d5ec4c6ce516dbed958e5e782db"
+    },
+    {
+      "path": "data/legacy/routes_100/points.geojson",
+      "size_bytes": 40819,
+      "sha256": "d8e5601b8387df8e4864ebfa0d2bcc6f8733f2e10d2fc22bbd88cedf403706a7"
+    },
+    {
+      "path": "data/legacy/routes_100/points.json",
+      "size_bytes": 49055,
+      "sha256": "29d9d5e7f28f3ad42dca96e4895dac3b99fe4d87fdda413b64abe1dfae589c3d"
+    },
+    {
+      "path": "data/legacy/routes_100/README.md",
+      "size_bytes": 4226,
+      "sha256": "4d7c97992070fb4543522773f987505c89f2211a8c51aec36e2e023bd9bdfa5d"
+    },
+    {
+      "path": "data/legacy/routes_100/request_audit.csv",
+      "size_bytes": 1645012,
+      "sha256": "f7e288e2670d62b0447d41b4d2b1021638ce178f3becce751b4ab05c417338a5"
+    },
+    {
+      "path": "data/legacy/routes_100/review_cases.csv",
+      "size_bytes": 8034,
+      "sha256": "d77899495763463a4cc638c677828f9ad3576a61d575f6030f0e4743712690e7"
+    },
+    {
+      "path": "data/legacy/routes_100/road_segments_unique.csv",
+      "size_bytes": 90469959,
+      "sha256": "8d85625ebbdad2c2db09956c7e7fe6928bc644265ca303d60d5dabce9427b9f3"
+    },
+    {
+      "path": "data/legacy/routes_100/route_summary_all.csv",
+      "size_bytes": 4053482,
+      "sha256": "9993d4129dbbe26d89f75040935210757294df7427f4f098b81aef17df9dfb9c"
+    },
+    {
+      "path": "data/legacy/routes_100/route_summary_new32_only.csv",
+      "size_bytes": 348500,
+      "sha256": "e13ac2375561531409a7e81efb503eebc667163e35acddbe195a553d930762f7"
+    },
+    {
+      "path": "data/legacy/routes_100/route_summary_poi_only.csv",
+      "size_bytes": 911199,
+      "sha256": "3253d0a99764e290d379ee0cb0171ca3e07cf9efb4fe77f6d83d9b7103d1ae9a"
+    },
+    {
+      "path": "data/legacy/routes_100/route_summary_unique.csv",
+      "size_bytes": 2503636,
+      "sha256": "876ebbf30762a972043e5a411b5436d3078fd198cc8d6764ca222643af74357c"
+    },
+    {
+      "path": "data/legacy/routes_100/routes_unique.geojson",
+      "size_bytes": 103834843,
+      "sha256": "e13e80bf5461e1f674d70e7d478028b75d9818b21a382c6a860d60c9dc41a7b4"
+    },
+    {
+      "path": "data/legacy/routes_100/source_checksums.json",
+      "size_bytes": 1408431,
+      "sha256": "94700884fe9efe8fc172dc338e8783713a218fd899aef6234c5fdd2e98d52740"
+    },
+    {
+      "path": "data/legacy/routes_100/validation_issues.csv",
+      "size_bytes": 30,
+      "sha256": "c317aa07075c3816783e0bd0634670900d1bae34c1964dca3fc4c5fe96c120da"
+    },
+    {
+      "path": "data/legacy/routes_100/verification_report.json",
+      "size_bytes": 7169,
+      "sha256": "80ddff0a5aa007a7f9c661857a2401b63eabacb65df467e596505847c872f423"
+    },
+    {
+      "path": "data/legacy_model_card.json",
+      "size_bytes": 2136,
+      "sha256": "3c4897b475a5b1766b66c6292ffa668047c5b6563853edefd49a1e94eced6f8b"
+    },
+    {
+      "path": "data/link_scores.json",
+      "size_bytes": 6475664,
+      "sha256": "9a421a45e86fb396acbca3d290c02b1abe4536355b16be74d998cdcc6ea87d43"
+    },
+    {
+      "path": "data/points.json",
+      "size_bytes": 39797,
+      "sha256": "71f22aabb2a14a96efe2b28533819d1ae6cbd1278ec430a0817a9435d04c24bb"
+    },
+    {
+      "path": "data/profile.json",
+      "size_bytes": 149,
+      "sha256": "fed65f262319729ccd68c9027b561c9b0be3dd836ab3d7c2aa21d055eed30fc2"
+    },
+    {
+      "path": "data/route_link_matches.json",
+      "size_bytes": 26839623,
+      "sha256": "becbbef154ce4688386698e1c7c0b813cb745d9062972cfba0a740bb5af5fbb3"
+    },
+    {
+      "path": "data/routes_full.geojson",
+      "size_bytes": 103834843,
+      "sha256": "e13e80bf5461e1f674d70e7d478028b75d9818b21a382c6a860d60c9dc41a7b4"
+    },
+    {
+      "path": "data/routes_scored.json",
+      "size_bytes": 7669889,
+      "sha256": "5dee056f496fa3dbd4e282debe7f92f4ec998f7794b640c169b9979c48806f93"
+    },
+    {
+      "path": "data/source_audit.json",
+      "size_bytes": 2509,
+      "sha256": "d7cfdd2399852243d4d07c65207c366d106bb7aee4ffb88f3de8b2049ae4e6b7"
+    },
+    {
+      "path": "data.js",
+      "size_bytes": 106485301,
+      "sha256": "372210a6c5a6e77a56b97cc87f17354394b5c396b4f1999343c22c784f138e20"
+    },
+    {
+      "path": "docs/FILE_ROLES.md",
+      "size_bytes": 2692,
+      "sha256": "8cae23162230736a3ebe11f59de95aa218bc4173d8738464d4fd79695d6e2e46"
+    },
+    {
+      "path": "docs/TEAM_CHECKLIST.md",
+      "size_bytes": 730,
+      "sha256": "8a32007b5fb520dccb376ea477362b42887121f6df0555f1a9dc0d031359561f"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "size_bytes": 871,
+      "sha256": "09006b8c5228cfe3f7c7aaf7ac89b590ffacfca4058286f978bd2765b56a10db"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/DATA_SOURCES.md",
+      "size_bytes": 2528,
+      "sha256": "40d8bb9bd37871857f2afe1e54aa9de0d9e40bf370a727923d94f916fa8f5dca"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/example_link_scores.csv",
+      "size_bytes": 443,
+      "sha256": "b7dc191cf7c76b0d8f3a606246c55f37b9a1296446fcecc8766d036d83f95299"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/example_route_comparison.csv",
+      "size_bytes": 475,
+      "sha256": "93ef529b9832e2c4d7c4faf24cbc1dec63b28f410c1cd1d817046554bed947ee"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/feature_schema.csv",
+      "size_bytes": 6696,
+      "sha256": "30d6b156c1497b4b17182e3944b18043e242bb7a20ce1eab515db1c157fde7e7"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/README.md",
+      "size_bytes": 6771,
+      "sha256": "ad983a784ccdf6cf0763a154c0822b946f4dc74554a53e39ebc99906c66bdd73"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/reason_codes.json",
+      "size_bytes": 1779,
+      "sha256": "2f6c8ee3b23faae2d9aa9835f935d5844e379fa7f216efa60f98890663069675"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/route_profiles.json",
+      "size_bytes": 2006,
+      "sha256": "639576b60123324a1dc7f6791efc6d9b29468fc5a7be08028b09c7e5e6703f5f"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/safety_scoring.yaml",
+      "size_bytes": 2506,
+      "sha256": "f9c64eefc57901f6af9e3c128e5ab530059e838ee2d5cc21dca05b8ae9542e1b"
+    },
+    {
+      "path": "documents/saferoute-novice-safety-standard-v1/training_validation.md",
+      "size_bytes": 4643,
+      "sha256": "d943b80219907b0b3fc04667b7e0c2c8e6522b27fffce14efe8bd3c382cd7b8d"
+    },
+    {
+      "path": "documents/SafeRoute_백엔드_체크리스트.pdf",
+      "size_bytes": 79077,
+      "sha256": "efece86ffa9937a8eb1c493183ebe60730fb6f55948f3f62145164c3b385f08c"
+    },
+    {
+      "path": "documents/SafeRoute_인터페이스_합의서-1.pdf",
+      "size_bytes": 61505,
+      "sha256": "07fcdcf7652cf53131885c486eb4f50220baf934cb35050666b1aa6d0fb8fef0"
+    },
+    {
+      "path": "documents/SafeRoute_프로젝트_제안서.pdf",
+      "size_bytes": 277713,
+      "sha256": "32baad126456d9c9ce1a8f1068d40798612d4b3e7f495061a36986a9d4c0f8bf"
+    },
+    {
+      "path": "environment_versions.json",
+      "size_bytes": 467,
+      "sha256": "08609ee12e92d2bc2d1aaad6ea8ebaf7085702cbd74c9e8701b8c3f17f7bf843"
+    },
+    {
+      "path": "index.html",
+      "size_bytes": 9948,
+      "sha256": "43185687e5cb45b860204debd1b36048b81a2e2812ffc43e3eafee07701eb9c9"
+    },
+    {
+      "path": "live_route_features.py",
+      "size_bytes": 8865,
+      "sha256": "466e65fec492f5e8d2882f6e09894de767085f4335d3e31057ac5bb7476d7bed"
+    },
+    {
+      "path": "models/route_lightgbm.joblib",
+      "size_bytes": 1229042,
+      "sha256": "e4ecd9f7f34125a2c443fc828344f9afd7f99737cc01f4d37cdf248346b542cc"
+    },
+    {
+      "path": "outputs/lightgbm_feature_importance.csv",
+      "size_bytes": 181,
+      "sha256": "39b2295c2acf3207a9543b99952a84bd245419ac85e87943d30497ed7bd847bf"
+    },
+    {
+      "path": "outputs/lightgbm_leave_one_region_out.csv",
+      "size_bytes": 756,
+      "sha256": "4d769c7ed92a334f431d6df0ad7117dc3b7ed058b3f8550fc4e9b5abe8c43964"
+    },
+    {
+      "path": "outputs/lightgbm_metrics.csv",
+      "size_bytes": 260,
+      "sha256": "0845cf77294bceae046865fe26b5fc013e46cf50ada056f937eac4668778edca"
+    },
+    {
+      "path": "outputs/lightgbm_region_comparison.csv",
+      "size_bytes": 372,
+      "sha256": "88470b3a61f8bdd11f1c5b6e5884b8b9b432acffc93a7195fe03e11546aac5a7"
+    },
+    {
+      "path": "outputs/lightgbm_region_metrics.csv",
+      "size_bytes": 629,
+      "sha256": "b031268080d2705e41dea36c03623db03ba752dbd1f543910b2e64839774e2ef"
+    },
+    {
+      "path": "outputs/lightgbm_test_predictions.parquet",
+      "size_bytes": 103773,
+      "sha256": "07df7940ad697951a1295bb361c32de30aea5cc37af65ed66b19d44c08a6b8ea"
+    },
+    {
+      "path": "outputs/logistic_baseline_metrics.csv",
+      "size_bytes": 401,
+      "sha256": "3709720c806273ebb763cebf1f98e4a65ba0801408ebc0a07b31c278b57bde16"
+    },
+    {
+      "path": "outputs/logistic_coefficients.csv",
+      "size_bytes": 551,
+      "sha256": "c63d6f79f00b303a88c4914efbf19256f9714d25e3f657b8ce61417ac6784d64"
+    },
+    {
+      "path": "outputs/logistic_test_predictions.parquet",
+      "size_bytes": 109597,
+      "sha256": "1187f9e2cf514fea8ce212cb528865b5a7479a6437e14474d05724813dca66bc"
+    },
+    {
+      "path": "outputs/model_comparison.csv",
+      "size_bytes": 471,
+      "sha256": "531f1bfab6925b3c073b0ade0c4116190dfeb3e2b52906e14b74cc66e3819c1a"
+    },
+    {
+      "path": "outputs/risk.parquet",
+      "size_bytes": 562295,
+      "sha256": "32fb6903f4255d7ef61804b0b4e2b4ac3b1080479c106095792ebfb272602b71"
+    },
+    {
+      "path": "outputs/risk_all_links.parquet",
+      "size_bytes": 650056,
+      "sha256": "d00980c82cfbe00ef0b0e3c2ee1d8a4c0e68a6302dc05095d799e329878e407e"
+    },
+    {
+      "path": "outputs/shap_bar_plot.png",
+      "size_bytes": 95330,
+      "sha256": "7176dc4aac3f352de3e931de870f40f7863498db14c77978e017ba568c8bcb46"
+    },
+    {
+      "path": "outputs/shap_direction_summary.csv",
+      "size_bytes": 552,
+      "sha256": "5079aa525a33abefee87f02e13b0255b69d00451b89038b38c8c1b2084487100"
+    },
+    {
+      "path": "outputs/shap_feature_importance.csv",
+      "size_bytes": 336,
+      "sha256": "08227c67ac53829f0601b3a538ca7f58bd2d7ca62497b1b315469992598a3114"
+    },
+    {
+      "path": "outputs/shap_summary_plot.png",
+      "size_bytes": 283267,
+      "sha256": "eced40c3ebb4388a36d689f6d516b3a67c91e94ee1ed5513dd33ed2bbdc12c39"
+    },
+    {
+      "path": "outputs/shap_test_details.parquet",
+      "size_bytes": 766954,
+      "sha256": "5b037eefa419954b574e2518bc1f5690745b9016e378f8152bd798b50b52936f"
+    },
+    {
+      "path": "pipeline/01_prepare_nodelink.py",
+      "size_bytes": 2146,
+      "sha256": "cd2b752d67a96808ceb659b3f9cb028ef961aba863f4b99b0db77d2d258d356e"
+    },
+    {
+      "path": "pipeline/02_filter_cheonan_asan.py",
+      "size_bytes": 1290,
+      "sha256": "0b10cd9e176df2991e57e9dafd7b69eac6addfffd5274740c043958dd62ed38d"
+    },
+    {
+      "path": "pipeline/03_extract_cheonan_asan.py",
+      "size_bytes": 6124,
+      "sha256": "9c24f4aed6cf3bdc347c3364dd759e765d7bf413b9092e5c17d8a9d9f2075ee5"
+    },
+    {
+      "path": "pipeline/04_build_road_features.py",
+      "size_bytes": 5619,
+      "sha256": "9fc90057342d1740dace35b6d13e5e3836eca5704ac0f31f7c26e1e40c0b7626"
+    },
+    {
+      "path": "pipeline/05_check_oneway.py",
+      "size_bytes": 4023,
+      "sha256": "b26156167be8b7be2d43b716c4b4034ad1241b3841a58bae205772fa2eb047d5"
+    },
+    {
+      "path": "pipeline/06_check_node_structure.py",
+      "size_bytes": 5197,
+      "sha256": "755f06c3093f0230ec572dc60a2e4e40faee30599d0948a9524600b2996c62d0"
+    },
+    {
+      "path": "pipeline/07_build_intersection_features.py",
+      "size_bytes": 7748,
+      "sha256": "58ced2bde216bd323910305874882456a1070c119b97b24868d1e987920a3eaa"
+    },
+    {
+      "path": "pipeline/08_check_intersection_feature.py",
+      "size_bytes": 7437,
+      "sha256": "40abd66151f8457031618f91c59cdbaa8b502640b898db251af8ee72859631e7"
+    },
+    {
+      "path": "pipeline/09_check_traffic_data.py",
+      "size_bytes": 6929,
+      "sha256": "c5069005d560bb4c76b74e70c5fae9e5faf704a6cfc874d7bd1899f5d642adbd"
+    },
+    {
+      "path": "pipeline/10_extract_traffic_cheonan_asan.py",
+      "size_bytes": 10651,
+      "sha256": "23160ff2242b50ca548de05a68c7ab5247caf2b0582796eb781b0050bf2c5bb7"
+    },
+    {
+      "path": "pipeline/11_check_traffic_link_matching.py",
+      "size_bytes": 10887,
+      "sha256": "44eeaf7ddeb073268c9e7028e1465fdee9582825f19f87a045763fae793ec89a"
+    },
+    {
+      "path": "pipeline/12_check_traffic_propagation.py",
+      "size_bytes": 12838,
+      "sha256": "fd3706614a644df4110a5fde1f769b7fea7d29f5babfd89862cf020f24c3ac53"
+    },
+    {
+      "path": "pipeline/13_check_traffic_network_connectivity.py",
+      "size_bytes": 19245,
+      "sha256": "e36c0d3b658c5f0bd6cb56ffba8feef71b8169e1e666175f24184684a1f2569b"
+    },
+    {
+      "path": "pipeline/14_build_traffic_features.py",
+      "size_bytes": 25149,
+      "sha256": "0fc0ce210aad7daf70ec7a3e5e3837e992c802ca3b502fafbb676f76ea81d940"
+    },
+    {
+      "path": "pipeline/15_check_traffic_proxy.py",
+      "size_bytes": 13498,
+      "sha256": "54411c66a74ee73c3c6431d6fb22bb30623550fa9b282cfeff67d20bf3005cf3"
+    },
+    {
+      "path": "pipeline/16_check_accident_data.py",
+      "size_bytes": 7964,
+      "sha256": "f0a2a151cd62e7a74d7ed8959846214b2755b368e4a9df8f75c93e2f6b8f1509"
+    },
+    {
+      "path": "pipeline/17_extract_accident_cheonan_asan.py",
+      "size_bytes": 14988,
+      "sha256": "a33b064d4faa53812cfa18ded5eb5cf87b110f47942b23023c9131baca003056"
+    },
+    {
+      "path": "pipeline/18_check_accident_duplicates.py",
+      "size_bytes": 14447,
+      "sha256": "11ad5cccf6796319720a436b57a8764eee46d0c3cbba65691d82f737e8926909"
+    },
+    {
+      "path": "pipeline/19_build_accident_distance.py",
+      "size_bytes": 10922,
+      "sha256": "5d8ab451ea77053e84ab9a3d4bc0357bd1c4a2de607c7f44aea456369137531e"
+    },
+    {
+      "path": "pipeline/20_build_labels.py",
+      "size_bytes": 12441,
+      "sha256": "5a2293a3a7a35b920f6a5dad5e662528eadcd4bc852aad2cb1dc8f182214f2f8"
+    },
+    {
+      "path": "pipeline/21_check_training_data.py",
+      "size_bytes": 14754,
+      "sha256": "fd5820652a0297098712b3db4bb41ff8dc40ed9301e8f17bf753044cf9ba6a71"
+    },
+    {
+      "path": "pipeline/22_train_logistic_baseline.py",
+      "size_bytes": 14424,
+      "sha256": "9401aeb8b6e116390adb810a7cbacb7f63db4061d3f30478b1b6c32b0881374d"
+    },
+    {
+      "path": "pipeline/23_train_lightgbm.py",
+      "size_bytes": 14342,
+      "sha256": "315b3ff2c03911f14c0242bc8fcf6d921d09e04e3a8f3c8c863648b131812d1b"
+    },
+    {
+      "path": "pipeline/24_validate_lightgbm.py",
+      "size_bytes": 18246,
+      "sha256": "ffb5f4d46e216c393bb625fa0864a025a851e0149f7753ca2bdf6a0f4e025010"
+    },
+    {
+      "path": "pipeline/25_analyze_shap.py",
+      "size_bytes": 11409,
+      "sha256": "84db0cd699ee175adab79ae3b5b749412e58838bc17ce9a13516a1e433e90506"
+    },
+    {
+      "path": "pipeline/26_train_final_and_predict.py",
+      "size_bytes": 13558,
+      "sha256": "1f955c199494a688d164d6105a6705f6c6912e05072f7260116925156d40993b"
+    },
+    {
+      "path": "pipeline/27_final_check_risk.py",
+      "size_bytes": 12537,
+      "sha256": "60dd591b294eeafa715c7a64b6feb0a52aca499a8247d9bd715edd2a5af88195"
+    },
+    {
+      "path": "pipeline/28_build_links_geojson.py",
+      "size_bytes": 13008,
+      "sha256": "b99f154f1f9fd83e79ad7f444800979b6e71fa978f10a06d2f04576bd7c7c0ec"
+    },
+    {
+      "path": "pipeline/29_check_backend_package.py",
+      "size_bytes": 12274,
+      "sha256": "f7eec2916903240866d82ea4a9a577c5466993372b944f9815b2bdfd12b5d876"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 8562,
+      "sha256": "946479fbe6940929f6b16f31664e6197de4f9f49b25ba2e8c4e2acc7ce4128f1"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "size_bytes": 388,
+      "sha256": "8ed3b763acf39099fdb65b7b85d43ed29286a87661522b4aabb51426b9ce063f"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 238,
+      "sha256": "3e4bd747e1284e827d2b6bb7c9bd923282a354749b2c52f5fc972b12c2d597b7"
+    },
+    {
+      "path": "runtime/node.exe",
+      "size_bytes": 92825416,
+      "sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237"
+    },
+    {
+      "path": "server.js",
+      "size_bytes": 23409,
+      "sha256": "1509dc871a7080198b51c7da07c3d26007a4050b2192549ceac4ebdaefe0d8dc"
+    },
+    {
+      "path": "SETUP_SAFEROUTE.cmd",
+      "size_bytes": 270,
+      "sha256": "e51b28469132f697748f49888015ca77680a6ee5a56f3eb317eb4518aaaba85a"
+    },
+    {
+      "path": "source/accident_distance_cheonan_asan.parquet",
+      "size_bytes": 596858,
+      "sha256": "0860bbc1fba09d68f95d5a41d890d3d87ef7f2f2b502d33bc6ab178a3ee74dd7"
+    },
+    {
+      "path": "source/accident_points_cheonan_asan.parquet",
+      "size_bytes": 57795,
+      "sha256": "ca30091ce1c85d39ff574b473dad7604d100453eecb315ce1663d2c80289e270"
+    },
+    {
+      "path": "source/features_cheonan_asan.parquet",
+      "size_bytes": 1450527,
+      "sha256": "e8b942ee61f88354b702ed6fc8e32544f3b158921f074be22320d4ab97607b3e"
+    },
+    {
+      "path": "source/intersection_features_cheonan_asan.parquet",
+      "size_bytes": 1118359,
+      "sha256": "42556a61a901961aa646e6adabe0ba9c00685a77b344495c6c329d87b29b5516"
+    },
+    {
+      "path": "source/links.geojson",
+      "size_bytes": 11803242,
+      "sha256": "d664aa81a464d4919fa88beb4bb76741efb9b701c22aa4c84f8abb642d75bfeb"
+    },
+    {
+      "path": "source/links_cheonan_asan.parquet",
+      "size_bytes": 4085580,
+      "sha256": "9c0701505c1b7013bc65b3d57e7ea1915ba938c45e9b485fe4a35db819267bd5"
+    },
+    {
+      "path": "source/nodes_cheonan_asan.parquet",
+      "size_bytes": 881745,
+      "sha256": "cfc93d6e5afee52b42f361902f3e74087d57011e3c670dfdbe204dfe37bef32d"
+    },
+    {
+      "path": "source/road_features_cheonan_asan.parquet",
+      "size_bytes": 1070536,
+      "sha256": "949b7402fbc84d9164d71edf6ac7a4df7851781c8775c901189ddaabb8285c49"
+    },
+    {
+      "path": "source/traffic_features_cheonan_asan.parquet",
+      "size_bytes": 1155578,
+      "sha256": "5bdab75fdb09e4f9e18e787b77894b8330de9716c81ac48f1b8c11743ff6d8cb"
+    },
+    {
+      "path": "source/traffic_points_cheonan_asan.parquet",
+      "size_bytes": 24045,
+      "sha256": "8999a7d08ef273baa637f830b1a7de923c4d28030e87eea115e29cb4d8fa8d7b"
+    },
+    {
+      "path": "START_SAFEROUTE.cmd",
+      "size_bytes": 60,
+      "sha256": "a2c485994673d56fcfd26f0deb401869fb7331d0f231afb9c3cd0d14f71acea5"
+    },
+    {
+      "path": "style.css",
+      "size_bytes": 13647,
+      "sha256": "78853150adc6b8cbfe906c64c56a3dfbb60f79fce6c2125921d7cf15f85d0d6b"
+    },
+    {
+      "path": "tests/fixtures/api_test.json",
+      "size_bytes": 2486,
+      "sha256": "94c2d9412440aa11623a0a2e34f5b4ec1615f836c64e08629e6eaa7ec2363711"
+    },
+    {
+      "path": "tests/integration.test.js",
+      "size_bytes": 9267,
+      "sha256": "59eecb0620d18f242b958e3536d3f85a210e81ae426f5e5ce3a77b7ed5f4013c"
+    },
+    {
+      "path": "tests/manual_kakao_search.py",
+      "size_bytes": 1335,
+      "sha256": "5075f502fc2e42b1701f033f5087b53cb70570028d4d4acfce4f4b6d793bf1f2"
+    },
+    {
+      "path": "tests/step2-server.test.js",
+      "size_bytes": 4357,
+      "sha256": "0a8e243f0decb951a6daaeb5cd6f162894048846272903d5b1f05cdd89433707"
+    },
+    {
+      "path": "tests/step2.test.js",
+      "size_bytes": 9639,
+      "sha256": "329f5cead1138b7f7ea210d66f3f98249ca46da21ff82d1862d5fcb8d0aadb2d"
+    },
+    {
+      "path": "tests/step3-worker.test.js",
+      "size_bytes": 4009,
+      "sha256": "62236af077fe92c7c1817e299c8c749fcaec298595c7ef8f1b16d9c97f0f1111"
+    },
+    {
+      "path": "tests/swap.test.js",
+      "size_bytes": 3282,
+      "sha256": "7aee176d45d55c16cc35f6da12a2ce9a150a3b6c68fe20414efafaeade64ec7f"
+    },
+    {
+      "path": "tests/test_launch.py",
+      "size_bytes": 1803,
+      "sha256": "64e2d257420ec35896b9c88159c04ea16d3b8e0b01d113b6a5a27e1e7ac69ead"
+    },
+    {
+      "path": "tests/ui.test.js",
+      "size_bytes": 2827,
+      "sha256": "4b6c2c58b39a1009e70314eb98c199d017790203724c5646d7b87add41740224"
+    },
+    {
+      "path": "tools/check_environment.py",
+      "size_bytes": 1833,
+      "sha256": "826cee4e30f886bb006656502e09de355223600cb9f483af46739d142f531da4"
+    },
+    {
+      "path": "tools/launch.py",
+      "size_bytes": 1396,
+      "sha256": "e978584dd8ebeb2bb980e095dba533c1f9476bb4badaf6a44fc44e6f58cd4bfb"
+    },
+    {
+      "path": "tools/setup_environment.py",
+      "size_bytes": 792,
+      "sha256": "42c1702ac0c4fff181fd820e1005fd0b70733de9f1519d66f1369480b6616f63"
+    },
+    {
+      "path": "training/evaluate_model.py",
+      "size_bytes": 2054,
+      "sha256": "7f7204af2d704bf4f18c012d3aecc270cca6f2fea5971cd8f01e71f8fa7fede6"
+    },
+    {
+      "path": "training/evaluate_ranking.py",
+      "size_bytes": 2684,
+      "sha256": "3099ddd1c4e9ac26adce05ce1e70a47fe0ddb4875c8bcf9b3549fe6996460663"
+    },
+    {
+      "path": "training/predict_live_routes.py",
+      "size_bytes": 8149,
+      "sha256": "6a542937889de805c06a56bc474f948863fb8f326fde6fc8b0ef0fb376ae63f7"
+    },
+    {
+      "path": "training/predict_routes.py",
+      "size_bytes": 2641,
+      "sha256": "1ec656d6180f80efed3aaf44796b06f0025f1f088b8aeaced5bdb6acafcca273"
+    },
+    {
+      "path": "training/prepare_dataset.py",
+      "size_bytes": 3903,
+      "sha256": "b68157e7375fe8c7ac79a5f88ef10d4e21cd8d4500273098e19bb342d530b513"
+    },
+    {
+      "path": "training/processed/api_test.json",
+      "size_bytes": 2486,
+      "sha256": "94c2d9412440aa11623a0a2e34f5b4ec1615f836c64e08629e6eaa7ec2363711"
+    },
+    {
+      "path": "training/processed/features.json",
+      "size_bytes": 225,
+      "sha256": "643f475b1a11fe7937e1693f3c6343f7a0321a767ed42a3bbbeaf2e5f90692de"
+    },
+    {
+      "path": "training/processed/ranking_evaluation.csv",
+      "size_bytes": 70808,
+      "sha256": "d466e0de346c17e4c77a5e7f307034dbf9b647391d9cdec1ba78e930635ce5ac"
+    },
+    {
+      "path": "training/processed/test.parquet",
+      "size_bytes": 296329,
+      "sha256": "f98a389e3e5ed593884d16bac75d05d5b19aed8c632ccafe3c2a421979067968"
+    },
+    {
+      "path": "training/processed/test_predictions.csv",
+      "size_bytes": 195978,
+      "sha256": "bcb1f3313696b022fc9d64bfa8d03360664aa5d9f3df75ee44d7f1547c0b4df1"
+    },
+    {
+      "path": "training/processed/train.parquet",
+      "size_bytes": 846829,
+      "sha256": "8420b1f102eb4bf939eb5c476199c5f4d4cdf211b333dde8bba2ad5b6dd3548f"
+    },
+    {
+      "path": "training/processed/val.parquet",
+      "size_bytes": 238981,
+      "sha256": "5be74309bde9667878f2fcbc9a8c49516c3cfcf7f0c21cb4ab542d47d2a317d9"
+    },
+    {
+      "path": "training/train_lightgbm.py",
+      "size_bytes": 2644,
+      "sha256": "bbb2279b52fce39c029ce2bcf3dff02c7a3d28e42d51367cea91ee307904536f"
+    }
+  ]
+}

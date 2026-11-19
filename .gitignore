@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+*.log
+backups/
+archive/
+# Large assets are included in the team ZIP, not ordinary code-only Git sharing.
+/data.js
+/data/
+/models/
+/runtime/
+/source/
+/training/processed/

@@ -1,0 +1,38 @@
+feature_name,display_name,group,type,definition,unit_or_range,source,usage,missing_policy,risk_direction
+link_id,도로 링크 ID,identifier,string,국가표준노드링크 식별자,unique,국가표준노드링크,join_only,drop_row_if_missing,not_a_feature
+direction,진행 방향,identifier,category,링크에서 허용된 진행 방향,FT/TF,국가표준노드링크,graph_constraint,exclude_if_unknown,not_a_feature
+length_m,링크 길이,exposure,float,도로 구간 길이,m,국가표준노드링크,exposure_and_routing,impute_from_geometry,longer_increases_exposure
+road_class,도로 등급,road_static,category,고속국도·일반국도·지방도·시군도 등,category,국가표준노드링크,model_and_rules,unknown_category,context_dependent
+lane_count,차로 수,road_static,integer,진행 방향 차로 수,count,국가표준노드링크/도로대장,model_and_rules,median_by_road_class,context_dependent
+road_width_m,도로 폭,road_static,float,차량 통행 가능한 도로 폭,m,도로대장/공공데이터,model_and_rules,median_by_road_class,narrower_may_increase_difficulty
+speed_limit_kmh,제한속도,road_static,float,법정 제한속도,km/h,국가표준노드링크/공공데이터,model_and_rules,median_by_road_class,higher_may_increase_severity
+one_way,일방통행,road_static,boolean,일방통행 여부,0/1,국가표준노드링크,graph_constraint,exclude_if_unknown,not_a_score
+curve_radius_m,곡선 반경,geometry,float,곡률로 계산한 대표 회전 반경,m,도로 형상에서 파생,model_and_rules,missing_indicator,smaller_may_increase_risk
+grade_pct,종단 경사,geometry,float,도로 구간 평균 또는 최대 경사,percent,수치표고모델/도로대장,model_and_rules,missing_indicator,absolute_higher_increases_difficulty
+tunnel,터널 여부,road_static,boolean,터널 구간 여부,0/1,국가표준노드링크,model,zero_with_missing_indicator,context_dependent
+bridge,교량 여부,road_static,boolean,교량 구간 여부,0/1,국가표준노드링크,model,zero_with_missing_indicator,context_dependent
+intersection_legs,교차로 갈래 수,intersection,integer,접속하는 방향성 도로 수,count,도로 그래프에서 파생,model_and_rules,derive_or_unknown,higher_increases_complexity
+signalized,신호 교차로,intersection,boolean,신호제어 여부,0/1,교통시설 공공데이터,model_and_rules,unknown_category,context_dependent
+unprotected_left,비보호 좌회전,maneuver,boolean,경로가 비보호 좌회전을 요구하는지,0/1,회전정보/경로 안내,rule_penalty,conservative_unknown,true_increases_complexity
+u_turn,U턴,maneuver,boolean,경로가 U턴을 요구하는지,0/1,회전정보/경로 안내,rule_penalty,conservative_unknown,true_increases_complexity
+roundabout_lanes,회전교차로 차로 수,maneuver,integer,진입하는 회전교차로 내부 차로 수,count,교차로 시설 데이터,model_and_rules,unknown_category,higher_increases_complexity
+merge_or_diverge,합류·분기,maneuver,boolean,고속 합류 또는 분기 여부,0/1,도로 그래프/경로 안내,model_and_rules,derive_or_unknown,true_increases_complexity
+required_lane_changes_250m,단거리 차로 변경,maneuver,integer,다음 조작 전 250m 안에 필요한 차로 변경 수,count,차로 연결정보/경로 안내,rule_penalty,unknown_with_penalty,higher_increases_complexity
+instruction_gap_m,연속 안내 간격,maneuver,float,현재 조작과 다음 조작 사이 거리,m,경로 안내에서 파생,rule_penalty,unknown_with_penalty,shorter_increases_complexity
+crosswalk_density,횡단보도 밀도,vulnerable,float,링크 1km당 횡단보도 수,count/km,공공데이터포털,model,missing_indicator,higher_may_increase_exposure
+school_zone_active,어린이보호구역 운영,vulnerable,boolean,현재 시각에 보호구역 운영 중인지,0/1,공공데이터포털/시간 규칙,model_and_rules,unknown_with_penalty,context_dependent
+senior_zone_active,노인보호구역 운영,vulnerable,boolean,현재 시각에 보호구역 운영 중인지,0/1,공공데이터포털/시간 규칙,model_and_rules,unknown_with_penalty,context_dependent
+pedestrian_hotspot,보행자 사고다발지역,vulnerable,float,링크 주변 보행자 사고다발 위험,0..1,TAAS,model,zero_with_missing_indicator,higher_increases_risk
+accident_weighted_rate_3y,최근 사고 심각도율,history,float,최근 3년 사고를 심각도로 가중하고 교통 노출로 보정한 값,weighted incidents per exposure,TAAS+교통량,model,missing_indicator,higher_increases_risk
+severe_accident_count_5y,중상·사망 사고 수,history,integer,링크 버퍼 내 최근 5년 중상·사망 사고 건수,count,TAAS,model,zero_with_missing_indicator,higher_increases_risk
+traffic_volume,교통량,traffic,float,시간대별 추정 또는 측정 교통량,vehicles/hour,ITS/도로교통량 통계,model_and_exposure,impute_by_road_time,context_dependent
+traffic_speed_kmh,현재 교통속도,traffic,float,수집 시점 링크 평균속도,km/h,ITS 또는 경로 API,model_dynamic,stale_or_missing_indicator,context_dependent
+speed_variance,속도 변동성,traffic,float,최근 관측 속도의 변동계수,0..n,ITS 시계열에서 파생,model_dynamic,missing_indicator,higher_may_increase_risk
+incident_active,돌발·공사 발생,traffic,boolean,사고·공사·차단 이벤트 활성 여부,0/1,ITS 돌발정보,hard_rule_and_dynamic,unknown_with_penalty,true_increases_risk
+precipitation_mm_h,시간당 강수,weather,float,경로 시점의 강수 강도,mm/h,기상청,model_dynamic,nearest_station_and_indicator,higher_increases_risk
+snow_depth_cm,적설,weather,float,경로 시점의 적설 깊이,cm,기상청,model_dynamic,nearest_station_and_indicator,higher_increases_risk
+visibility_m,가시거리,weather,float,관측 또는 예보 가시거리,m,기상청,model_dynamic,missing_indicator,lower_increases_risk
+road_ice_risk,결빙 위험,weather,float,기온·노면·강수로 계산한 결빙 위험,0..1,기상청/도로기상,hard_rule_and_dynamic,conservative_unknown,higher_increases_risk
+night_unlit,야간 조명 부족,visibility,boolean,야간이며 조명 정보가 부족하거나 미설치,0/1,일출일몰+도로조명 공공데이터,model_and_rules,unknown_with_penalty,true_increases_risk
+data_age_minutes,실시간 데이터 나이,quality,float,교통·돌발·기상 정보 수집 후 경과시간,min,수집 메타데이터,uncertainty,maximum_age,true_increases_uncertainty
+critical_missing_ratio,핵심 피처 결측률,quality,float,핵심 안전 피처 중 결측 비율,0..1,파이프라인에서 파생,uncertainty,fallback_if_over_0_20,higher_increases_uncertainty

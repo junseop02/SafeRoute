@@ -1,0 +1,21 @@
+const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path');
+const {EventEmitter}=require('node:events');
+function harness({key=true,upstreams=[],failWorker=false}={}){
+ let handler,spawnCount=0;const writes=[];
+ const server={on(){},listen(){}};
+ const https={get(url,options,callback){const req=new EventEmitter();req.destroy=e=>req.emit('error',e);const item=upstreams.shift();queueMicrotask(()=>{if(item instanceof Error)return req.emit('error',item);const response=new EventEmitter();response.statusCode=200;response.setEncoding=()=>{};callback(response);response.emit('data',JSON.stringify(item));response.emit('end');});return req;}};
+ function spawn(){spawnCount++;const child=new EventEmitter();child.stderr=new EventEmitter();child.stdout=new EventEmitter();child.stdin=Object.assign(new EventEmitter(),{write(value){writes.push(JSON.parse(value));queueMicrotask(()=>child.stdout.emit('data',Buffer.from(JSON.stringify({success:true,results:JSON.parse(value).routes.map(r=>({route_id:r.route_id,eligible:true,easy_score:70,predicted_burden:30,coverage:.9}))})+'\n')));}});child.kill=()=>child.emit('close',1);queueMicrotask(()=>{if(failWorker){child.emit('error',new Error('test worker failure'));child.emit('close',1);}else child.stdout.emit('data',Buffer.from('{"type":"ready"}\n'));});return child;}
+ const mocks={http:{createServer(fn){handler=fn;return server}},https,fs,path,child_process:{spawn}};
+ const context=vm.createContext({require:name=>mocks[name],__dirname:path.resolve(__dirname,'..'),process:{once(){},env:key?{KAKAO_REST_API_KEY:'test-placeholder'}:{},platform:'linux'},URL,Buffer,setTimeout,clearTimeout,console:{error(){},log(){},info(){}}});
+ vm.runInContext(fs.readFileSync(path.join(__dirname,'..','server.js'),'utf8'),context);
+ function request(url,method='GET',body){return new Promise(resolve=>{const req=new EventEmitter();req.url=url;req.method=method;const res={headersSent:false,writableEnded:false,writeHead(status){this.status=status;this.headersSent=true},end(text){this.writableEnded=true;resolve({status:this.status,data:JSON.parse(text)})}};handler(req,res);if(body!==undefined){req.emit('data',Buffer.from(JSON.stringify(body)));req.emit('end');}});}
+ return {request,writes,spawns:()=>spawnCount};
+}
+const raw=(offset=0)=>({routes:[{result_code:0,summary:{distance:1000,duration:100},sections:[{roads:[{vertexes:[127,36,127.01+offset,36]}],guides:[]}]}]});
+const query='/api/directions?origin=127,36&destination=127.1,36.1';
+test('missing Kakao key returns explicit error without API call',async()=>{const h=harness({key:false});const r=await h.request(query);assert.equal(r.status,503);assert.equal(r.data.success,false);});
+test('identical geometries deduplicate; failed profile preserves successful candidates',async()=>{const h=harness({upstreams:[raw(),raw(),new Error('test upstream failure')]});const r=await h.request(query);assert.equal(r.status,200);assert.equal(r.data.routes.length,1);assert.equal(r.data.routes[0].priority,'RECOMMEND');});
+test('all profile failures or empty routes never return recommendation candidates',async()=>{for(const upstreams of [[new Error('a'),new Error('b'),new Error('c')],[{routes:[]},{routes:[]},{routes:[]}]]){const h=harness({upstreams});const r=await h.request(query);assert.equal(r.status,502);assert.equal(r.data.success,false);}});
+test('invalid coordinates and empty AI requests are rejected',async()=>{const h=harness();assert.equal((await h.request('/api/directions?origin=invalid&destination=127,36')).status,400);assert.equal((await h.request('/api/predict-live','POST',{routes:[]})).status,400);});
+test('concurrent AI requests reuse one worker and receive correct route IDs',async()=>{const h=harness();const requests=[h.request('/api/predict-live','POST',{routes:[{route_id:'a'}]}),h.request('/api/predict-live','POST',{routes:[{route_id:'b'}]})];const results=await Promise.all(requests);assert.equal(h.spawns(),1);assert.deepEqual(results.map(r=>r.data.results[0].route_id),['a','b']);});
+test('worker launch failure returns error, no success prediction',async()=>{const h=harness({failWorker:true});const r=await h.request('/api/predict-live','POST',{routes:[{route_id:'a'}]});assert.equal(r.status,500);assert.equal(r.data.success,false);});

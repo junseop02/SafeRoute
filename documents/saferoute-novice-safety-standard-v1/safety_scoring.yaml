@@ -1,0 +1,87 @@
+version: 1.0.0
+name: saferoute_novice_safety
+score_direction: higher_is_riskier
+
+hard_exclusions:
+  - id: road_closed
+    condition: closure_status == "FULL"
+  - id: illegal_direction
+    condition: direction_allowed == false
+  - id: prohibited_turn
+    condition: turn_allowed == false
+  - id: vehicle_restriction
+    condition: vehicle_allowed == false
+  - id: official_hazard_control
+    condition: flood_control == true or landslide_control == true or ice_control == true
+  - id: broken_topology
+    condition: geometry_valid == false or graph_connected == false
+
+link_risk:
+  formula: 0.50*base_crash_risk + 0.25*novice_complexity + 0.20*dynamic_hazard + 0.05*uncertainty
+  components:
+    base_crash_risk:
+      weight: 0.50
+      range: [0, 100]
+      source: calibrated_lightgbm
+    novice_complexity:
+      weight: 0.25
+      range: [0, 100]
+      source: maneuver_rules
+    dynamic_hazard:
+      weight: 0.20
+      range: [0, 100]
+      source: live_traffic_weather_incidents
+    uncertainty:
+      weight: 0.05
+      range: [0, 100]
+      source: freshness_missingness_model_confidence
+
+maneuver_equivalent_seconds:
+  unprotected_left_turn: 45
+  u_turn: 60
+  complex_intersection_5plus: 35
+  high_speed_merge_or_exit: 40
+  required_lane_change_within_250m: 30
+  three_plus_lane_changes_per_km: 50
+  multi_lane_roundabout: 30
+  single_lane_roundabout: 10
+  narrow_local_road_per_km: 20
+  sharp_curve_or_steep_grade: 20
+  active_vulnerable_zone_min: 5
+  active_vulnerable_zone_max: 20
+
+context_multipliers:
+  rain: 1.20
+  heavy_rain: 1.40
+  snow_or_ice: 1.70
+  fog_low_visibility: 1.45
+  night_unlit: 1.30
+  stale_live_data: 1.15
+
+route_aggregation:
+  time_weighted_mean_weight: 0.55
+  p90_link_risk_weight: 0.30
+  max_link_risk_weight: 0.15
+  safety_score_formula: 100 - route_risk
+
+candidate_constraints:
+  novice_safe:
+    max_eta_ratio_vs_fastest: 1.20
+    max_distance_ratio_vs_shortest: 1.25
+    minimum_high_risk_exposure_reduction: 0.10
+  uncertain_advantage_action: return_general_route_with_uncertainty_label
+
+grades:
+  A: {min: 85, max: 100, label: "추정 위험 매우 낮음"}
+  B: {min: 70, max: 84.999, label: "추정 위험 낮음"}
+  C: {min: 55, max: 69.999, label: "주의 구간 있음"}
+  D: {min: 0, max: 54.999, label: "고위험 구간 있음"}
+
+fallback:
+  critical_feature_missing_ratio: 0.20
+  action: use_general_route_and_show_data_warning
+
+display:
+  prohibited_claim: "안전한 경로"
+  preferred_claim: "추정 위험이 더 낮은 경로"
+  max_reason_codes: 3

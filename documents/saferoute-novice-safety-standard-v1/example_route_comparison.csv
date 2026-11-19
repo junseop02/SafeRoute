@@ -1,0 +1,4 @@
+route_id,profile,eta_min,distance_km,route_safety_score,unprotected_left_count,u_turn_count,complex_intersection_count,high_risk_distance_km,display_reason,is_synthetic
+EXAMPLE_FAST,일반 빠른 경로,30,24.0,66,2,1,4,3.2,비교 기준,true
+EXAMPLE_NOVICE,초보안전,34,25.8,82,0,0,2,0.8,추정 위험 24% 감소·비보호 좌회전 2회 감소·4분 증가,true
+EXAMPLE_BALANCED,초보균형,32,24.9,76,1,0,3,1.5,추정 위험 15% 감소·U턴 회피·2분 증가,true

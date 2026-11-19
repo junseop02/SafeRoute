@@ -1,0 +1,3 @@
+routing:
+  kakao_profiles: [RECOMMEND, TIME, DISTANCE, MAIN_ROAD]
+  kakao_avoid_profiles: [motorway, toll, schoolzone]

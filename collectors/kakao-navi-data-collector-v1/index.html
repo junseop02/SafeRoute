@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>카카오내비 데이터 수집기</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="route-ui.css">
+</head>
+<body>
+  <main class="app-shell">
+    <aside class="panel">
+      <div class="brand">
+        <span class="brand-mark">K</span>
+        <div><h1>카카오내비 수집기</h1><p>자동차 경로·교통 데이터 저장</p></div>
+      </div>
+
+      <section class="card">
+        <h2>출발지와 도착지</h2>
+        <label for="target">검색 위치</label>
+        <select id="target">
+          <option value="start">출발지</option>
+          <option value="end">도착지</option>
+        </select>
+        <form id="search-form" class="search-row">
+          <input id="keyword" type="search" placeholder="예: 천안역, 호서대 아산캠퍼스" required>
+          <button type="submit">검색</button>
+        </form>
+        <div id="search-results" class="results" aria-live="polite"></div>
+        <div class="point-summary">
+          <p><b>출발</b><span id="start-label">선택 전</span></p>
+          <p><b>도착</b><span id="end-label">선택 전</span></p>
+        </div>
+        <button id="route-button" class="primary" disabled>출발지·도착지를 선택하세요</button>
+        <div id="route-results" class="route-results" aria-live="polite"></div>
+        <div id="data-files" class="data-files" hidden></div>
+        <button id="route-download" hidden>현재 수집 결과 JSON 내려받기</button>
+        <p id="route-status" class="hint">추천 대안·빠른·최단·큰길·고속도로 제외·유료도로 제외·스쿨존 제외를 수집합니다. 한 번 누르면 API 7건을 사용합니다.</p>
+        <p class="hint">성공하면 이 폴더의 <code>data/raw</code>와 <code>data/processed</code>에 JSON·GeoJSON·CSV가 자동 저장됩니다.</p>
+      </section>
+
+      <button id="change-key" class="text-button">JavaScript 키 변경</button>
+    </aside>
+    <section class="map-area">
+      <div id="map"></div>
+      <div id="map-message" class="map-message">카카오맵을 불러오는 중입니다…</div>
+    </section>
+  </main>
+
+  <dialog id="key-dialog">
+    <form id="key-form" method="dialog">
+      <h2>카카오 JavaScript 키 입력</h2>
+      <p>카카오 디벨로퍼스의 <b>JavaScript 키</b>를 입력하세요. REST API 키는 입력하지 마세요.</p>
+      <input id="key-input" type="password" autocomplete="off" placeholder="JavaScript 키" required>
+      <label class="remember"><input id="remember-key" type="checkbox" checked> 이 브라우저에 저장</label>
+      <div class="dialog-actions"><button id="key-cancel" type="button">취소</button><button class="primary" type="submit">지도 시작</button></div>
+      <p class="hint"><code>http://localhost:8080</code>을 JavaScript SDK 도메인에 등록해야 합니다.</p>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_mokcheon",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "목천읍",
+        "address_name": "충남 천안시 동남구 목천읍 서리1길 41-7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.234684979642,
+          36.7849559698672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_pungse",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "풍세면",
+        "address_name": "충남 천안시 동남구 풍세면 상정1길 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.118735814079,
+          36.7222012528681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_gwangdeok",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "광덕면",
+        "address_name": "충남 천안시 동남구 광덕면 신흥리3길 33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.111255672868,
+          36.6986422345682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_buk",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "북면",
+        "address_name": "충남 천안시 동남구 북면 위례성로 724"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.273262167455,
+          36.8274528060516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_seongnam",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "성남면",
+        "address_name": "충남 천안시 동남구 성남면 신사대화로 149"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.23693600996536,
+          36.74247289430815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_susin",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "수신면",
+        "address_name": "충남 천안시 동남구 수신면 수신로 431"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.280963043926,
+          36.7311311260335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_byeongcheon",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "병천면",
+        "address_name": "충남 천안시 동남구 병천면 병천2로 57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.302587862467,
+          36.7665640994854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_dong",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "동면",
+        "address_name": "충남 천안시 동남구 동면 동산1길 63"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.34845209604863,
+          36.77873429119016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_jungang",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "중앙동",
+        "address_name": "충남 천안시 동남구 원성천1길 17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.15260595587,
+          36.800058874519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_munseong",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "문성동",
+        "address_name": "충남 천안시 동남구 문화로 15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.150238368757,
+          36.8109941683799
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_wonseong1",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "원성1동",
+        "address_name": "충남 천안시 동남구 충절로 130"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.15837780819506,
+          36.807159294433006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_wonseong2",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "원성2동",
+        "address_name": "충남 천안시 동남구 고재15길 15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.160833435763,
+          36.801428536531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_bongmyeong",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "봉명동",
+        "address_name": "충남 천안시 동남구 봉정로 39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.13943451163375,
+          36.80577007050382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_ilbong",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "일봉동",
+        "address_name": "충남 천안시 동남구 신용로 48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.1422160246834,
+          36.801017018206466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_sinbang",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "신방동",
+        "address_name": "충남 천안시 동남구 천안천변길 129-41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.122481782342,
+          36.7859137927941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_cheongnyong",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "청룡동",
+        "address_name": "충남 천안시 동남구 청수14로 99"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.15673794425753,
+          36.78606913007452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_dongnam_sinan",
+        "city": "천안시",
+        "district": "동남구",
+        "name": "신안동",
+        "address_name": "충남 천안시 동남구 신부3길 16-6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.16028161403912,
+          36.81730954960603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_seonghwan",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "성환읍",
+        "address_name": "충남 천안시 서북구 성환읍 성환13길 7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.134368848863,
+          36.9181938680331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_seonggeo",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "성거읍",
+        "address_name": "충남 천안시 서북구 성거읍 봉주로 469"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.199166201756,
+          36.8780437642569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_jiksan",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "직산읍",
+        "address_name": "충남 천안시 서북구 직산읍 삼은4길 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.150433811142,
+          36.8787570251716
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_ipjang",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "입장면",
+        "address_name": "충남 천안시 서북구 입장면 입장로 129"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.221165722117,
+          36.9128088075409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_seongjeong1",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "성정1동",
+        "address_name": "충남 천안시 서북구 성정8길 5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.141447076813,
+          36.8179326819152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_seongjeong2",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "성정2동",
+        "address_name": "충남 천안시 서북구 서부8길 29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.1398734360698,
+          36.819744871643145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_ssangyong1",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "쌍용1동",
+        "address_name": "충남 천안시 서북구 미라10길 21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.1305025913375,
+          36.804030248599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_ssangyong2",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "쌍용2동",
+        "address_name": "충남 천안시 서북구 쌍용14길 70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.123188478789,
+          36.7962722645347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_ssangyong3",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "쌍용3동",
+        "address_name": "충남 천안시 서북구 월봉로 138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.119196499244,
+          36.8029337497668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_baekseok",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "백석동",
+        "address_name": "충남 천안시 서북구 번영로 208"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.11510920689621,
+          36.819748894490615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_buldang1",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "불당1동",
+        "address_name": "충남 천안시 서북구 봉서산로 64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.11372362771,
+          36.8059344038356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_buldang2",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "불당2동",
+        "address_name": "충남 천안시 서북구 불당25로 182"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.10850542756535,
+          36.81737977892481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_buseong1",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "부성1동",
+        "address_name": "충남 천안시 서북구 부대중앙길 51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.152210937846,
+          36.8427719304848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "ca_seobuk_buseong2",
+        "city": "천안시",
+        "district": "서북구",
+        "name": "부성2동",
+        "address_name": "충남 천안시 서북구 노태산로 133"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.12813982292224,
+          36.838635400320456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_yeomchi",
+        "city": "아산시",
+        "district": "",
+        "name": "염치읍",
+        "address_name": "충남 아산시 염치읍 염치로 37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.976410130662,
+          36.8168213959875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_baebang",
+        "city": "아산시",
+        "district": "",
+        "name": "배방읍",
+        "address_name": "충남 아산시 배방읍 배방로 38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.05394596065,
+          36.77391129328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_songak",
+        "city": "아산시",
+        "district": "",
+        "name": "송악면",
+        "address_name": "충남 아산시 송악면 송악로 790"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.00903457472158,
+          36.73163362086565
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_tangjeong",
+        "city": "아산시",
+        "district": "",
+        "name": "탕정면",
+        "address_name": "충남 아산시 탕정면 탕정면로 36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.06122065427205,
+          36.79848477590795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_eumbong",
+        "city": "아산시",
+        "district": "",
+        "name": "음봉면",
+        "address_name": "충남 아산시 음봉면 음봉면로 23-5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.01224400913947,
+          36.8497784176394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_dunpo",
+        "city": "아산시",
+        "district": "",
+        "name": "둔포면",
+        "address_name": "충남 아산시 둔포면 둔포면로 33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.037627872091,
+          36.9297186062491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_yeongin",
+        "city": "아산시",
+        "district": "",
+        "name": "영인면",
+        "address_name": "충남 아산시 영인면 영인로 78"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.954764921775,
+          36.8565764851928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_inju",
+        "city": "아산시",
+        "district": "",
+        "name": "인주면",
+        "address_name": "충남 아산시 인주면 현대로 1280"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.88562740923963,
+          36.86776411849497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_seonjang",
+        "city": "아산시",
+        "district": "",
+        "name": "선장면",
+        "address_name": "충남 아산시 선장면 선장로 137"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.86127298348126,
+          36.79126118802668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_dogo",
+        "city": "아산시",
+        "district": "",
+        "name": "도고면",
+        "address_name": "충남 아산시 도고면 도고면로 91"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.87741118542225,
+          36.75744651079493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_sinchang",
+        "city": "아산시",
+        "district": "",
+        "name": "신창면",
+        "address_name": "충남 아산시 신창면 서부북로 631"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.93618329441809,
+          36.803715270386355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_onyang1",
+        "city": "아산시",
+        "district": "",
+        "name": "온양1동",
+        "address_name": "충남 아산시 번영로 77"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.999498090973,
+          36.7871194621711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_onyang2",
+        "city": "아산시",
+        "district": "",
+        "name": "온양2동",
+        "address_name": "충남 아산시 중앙로 40"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.0034390308999,
+          36.778384000625806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_onyang3",
+        "city": "아산시",
+        "district": "",
+        "name": "온양3동",
+        "address_name": "충남 아산시 삼동로40번길 15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.01289442562796,
+          36.78351971094718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_onyang4",
+        "city": "아산시",
+        "district": "",
+        "name": "온양4동",
+        "address_name": "충남 아산시 실옥로 220"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.97844168353161,
+          36.798242661840604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_onyang5",
+        "city": "아산시",
+        "district": "",
+        "name": "온양5동",
+        "address_name": "충남 아산시 시민로 288"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9960402401243,
+          36.77514537234298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "as_onyang6",
+        "city": "아산시",
+        "district": "",
+        "name": "온양6동",
+        "address_name": "충남 아산시 외암로 1330"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.01930644101017,
+          36.754845285303425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_01",
+        "city": "천안시",
+        "district": "",
+        "name": "뚜쥬루 빵돌가마점",
+        "address_name": "충남 천안시 동남구 풍세로 706"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.13965203895398,
+          36.77312336918423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_02",
+        "city": "천안시",
+        "district": "",
+        "name": "할머니학화호도과자 천안구성동본점",
+        "address_name": "충남 천안시 동남구 천안대로 590"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.164861625569,
+          36.8008354963597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_03",
+        "city": "천안시",
+        "district": "",
+        "name": "충남집순대",
+        "address_name": "충남 천안시 동남구 병천면 충절로 1748"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.29899122714066,
+          36.76217935698221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_04",
+        "city": "천안시",
+        "district": "",
+        "name": "독립기념관",
+        "address_name": "충남 천안시 동남구 목천읍 독립기념관로 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.22280833066404,
+          36.78366949071773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_05",
+        "city": "천안시",
+        "district": "",
+        "name": "각원사",
+        "address_name": "충남 천안시 동남구 각원사길 245"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.19712289373,
+          36.8336408246151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_06",
+        "city": "천안시",
+        "district": "",
+        "name": "천안고속버스터미널",
+        "address_name": "충남 천안시 동남구 만남로 43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.15442837101662,
+          36.81925467940454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_07",
+        "city": "천안시",
+        "district": "",
+        "name": "신세계백화점 천안아산점",
+        "address_name": "충남 천안시 동남구 만남로 43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.15606633618994,
+          36.81948953261511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_08",
+        "city": "천안시",
+        "district": "",
+        "name": "단국대학교의과대학부속병원",
+        "address_name": "충남 천안시 동남구 망향로 201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.17236266226318,
+          36.841909097538014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_09",
+        "city": "천안시",
+        "district": "",
+        "name": "천안시청",
+        "address_name": "충남 천안시 서북구 번영로 156"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.11391197259194,
+          36.815067881645525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_10",
+        "city": "천안시",
+        "district": "",
+        "name": "천안삼거리공원",
+        "address_name": "충남 천안시 동남구 충절로 410"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.168403855354,
+          36.7830245423585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_11",
+        "city": "아산시",
+        "district": "",
+        "name": "목화반점",
+        "address_name": "충남 아산시 온주길26번길 7-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.01929687199586,
+          36.76135136711693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_12",
+        "city": "아산시",
+        "district": "",
+        "name": "신정식당",
+        "address_name": "충남 아산시 시민로409번길 18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.99988796851129,
+          36.78589935366905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_13",
+        "city": "아산시",
+        "district": "",
+        "name": "모나밸리",
+        "address_name": "충남 아산시 순천향로 624"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.99229126910812,
+          36.75077534183344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_14",
+        "city": "아산시",
+        "district": "",
+        "name": "현충사",
+        "address_name": "충남 아산시 염치읍 현충사길 48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.03293796552498,
+          36.80848930555538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_15",
+        "city": "아산시",
+        "district": "",
+        "name": "외암민속마을",
+        "address_name": "충남 아산시 송악면 외암민속길 34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.01661346257764,
+          36.730227051957094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_16",
+        "city": "아산시",
+        "district": "",
+        "name": "온양온천역",
+        "address_name": "충남 아산시 온천대로 1496"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.003185952248,
+          36.780505234556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_17",
+        "city": "아산시",
+        "district": "",
+        "name": "천안아산역",
+        "address_name": "충남 아산시 배방읍 희망로 100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.10444383891124,
+          36.79434469820448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_18",
+        "city": "아산시",
+        "district": "",
+        "name": "온양민속박물관",
+        "address_name": "충남 아산시 충무로 123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.00629667236,
+          36.7920429855642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_19",
+        "city": "아산시",
+        "district": "",
+        "name": "아산충무병원",
+        "address_name": "충남 아산시 문화로 381"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.020042958012,
+          36.7793105113989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_20",
+        "city": "아산시",
+        "district": "",
+        "name": "아산시청",
+        "address_name": "충남 아산시 시민로 456"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.00250963817426,
+          36.789972365394405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_21",
+        "city": "천안시",
+        "district": "",
+        "name": "청화집순대",
+        "address_name": "충남 천안시 동남구 병천면 충절로 1749"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.299247332946,
+          36.7623733539796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_22",
+        "city": "천안시",
+        "district": "",
+        "name": "박순자아우내순대",
+        "address_name": "충남 천안시 동남구 병천면 아우내순대길 47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.29910828369731,
+          36.76175193423393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_23",
+        "city": "천안시",
+        "district": "",
+        "name": "뚜쥬루 성정점",
+        "address_name": "충남 천안시 서북구 백석로 270"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.13961420542567,
+          36.81833223713698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_24",
+        "city": "천안시",
+        "district": "",
+        "name": "천안역",
+        "address_name": "충남 천안시 동남구 대흥로 239"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.14677293470254,
+          36.80907913057255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_25",
+        "city": "천안시",
+        "district": "",
+        "name": "두정역 1호선",
+        "address_name": "충남 천안시 서북구 두정로 289"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.14894257701431,
+          36.833981274461074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_26",
+        "city": "천안시",
+        "district": "",
+        "name": "갤러리아백화점 센터시티점",
+        "address_name": "충남 천안시 서북구 공원로 227"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.104711121408,
+          36.8005612401544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_27",
+        "city": "천안시",
+        "district": "",
+        "name": "천안예술의전당",
+        "address_name": "충남 천안시 동남구 성남면 종합휴양지로 185"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.22541608115678,
+          36.75603097336238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_28",
+        "city": "천안시",
+        "district": "",
+        "name": "천안축구센터 본관동",
+        "address_name": "충남 천안시 서북구 축구센터로 150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.14525991942142,
+          36.82146313605393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_29",
+        "city": "천안시",
+        "district": "",
+        "name": "순천향대학교 부속 천안병원",
+        "address_name": "충남 천안시 동남구 순천향6길 31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.135969905471,
+          36.8034041590226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_30",
+        "city": "아산시",
+        "district": "",
+        "name": "온양제일호텔",
+        "address_name": "충남 아산시 온천대로 1462"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.99964935859293,
+          36.7821344937766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_31",
+        "city": "아산시",
+        "district": "",
+        "name": "온양관광호텔",
+        "address_name": "충남 아산시 온천대로 1459"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.999914858806,
+          36.7834248915404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_32",
+        "city": "아산시",
+        "district": "",
+        "name": "온양온천랜드",
+        "address_name": "충남 아산시 삼동로28번길 46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.015768587978,
+          36.7811926845319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_33",
+        "city": "아산시",
+        "district": "",
+        "name": "파라다이스스파도고",
+        "address_name": "충남 아산시 선장면 도고온천로 176-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.8859566277033,
+          36.766116555005155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_34",
+        "city": "아산시",
+        "district": "",
+        "name": "아산스파비스",
+        "address_name": "충남 아산시 음봉면 아산온천로157번길 67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.980596363598,
+          36.8560743845979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_35",
+        "city": "아산시",
+        "district": "",
+        "name": "세계꽃식물원",
+        "address_name": "충남 아산시 도고면 아산만로 37-37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.86058076715824,
+          36.74970989592836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_36",
+        "city": "아산시",
+        "district": "",
+        "name": "피나클랜드 수목원",
+        "address_name": "충남 아산시 영인면 월선길 20-42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.927275726003,
+          36.873708126936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_37",
+        "city": "아산시",
+        "district": "",
+        "name": "영인산자연휴양림",
+        "address_name": "충남 아산시 영인면 아산온천로 16-26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.95014385033994,
+          36.84104588935129
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_38",
+        "city": "아산시",
+        "district": "",
+        "name": "신정호관광단지",
+        "address_name": "충남 아산시 신정로 616"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.984416833246,
+          36.7727907007097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_39",
+        "city": "아산시",
+        "district": "",
+        "name": "은행나무길 골목밥집",
+        "address_name": "충남 아산시 염치읍 은행나무길215번길 13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.010186629482,
+          36.7998499626358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_40",
+        "city": "아산시",
+        "district": "",
+        "name": "곡교천시민체육공원",
+        "address_name": "충남 아산시 염치읍 석정리 536-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.995459650034,
+          36.8000341392301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_41",
+        "city": "아산시",
+        "district": "",
+        "name": "이순신종합운동장",
+        "address_name": "충남 아산시 남부로 370-24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.021621583184,
+          36.7681868495457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_42",
+        "city": "아산시",
+        "district": "",
+        "name": "이순신빙상장체육관",
+        "address_name": "충남 아산시 남부로 370-42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.02446247383006,
+          36.76952716220382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_43",
+        "city": "아산시",
+        "district": "",
+        "name": "배방역 1호선",
+        "address_name": "충남 아산시 배방읍 온천대로 1967"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.052788090648,
+          36.7776965014173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_44",
+        "city": "아산시",
+        "district": "",
+        "name": "탕정역 1호선",
+        "address_name": "충남 아산시 탕정면 한들물빛6로 11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.08439248328,
+          36.7882087107804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_45",
+        "city": "아산시",
+        "district": "",
+        "name": "신창역",
+        "address_name": "충남 아산시 신창면 행목로 50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.949968427888,
+          36.7695119484179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_46",
+        "city": "아산시",
+        "district": "",
+        "name": "온양온천시장",
+        "address_name": "충남 아산시 시장길 29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.00423240627482,
+          36.783292352324985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_47",
+        "city": "아산시",
+        "district": "",
+        "name": "이마트 아산점",
+        "address_name": "충남 아산시 온천대로 1678"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.02187043025,
+          36.7767582286187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_48",
+        "city": "아산시",
+        "district": "",
+        "name": "롯데마트 아산터미널점",
+        "address_name": "충남 아산시 번영로 225"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.015897007385,
+          36.78463673044871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_49",
+        "city": "아산시",
+        "district": "",
+        "name": "공세리성당",
+        "address_name": "충남 아산시 인주면 공세리성당길 10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.914074897929,
+          36.8834059716241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_50",
+        "city": "아산시",
+        "district": "",
+        "name": "지중해마을",
+        "address_name": "충남 아산시 탕정면 탕정면로8번길 55-7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          127.06164409380338,
+          36.796950862892004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_51",
+        "city": "아산시",
+        "district": "",
+        "name": "인주카페 한옥점",
+        "address_name": "충남 아산시 인주면 아산만로 1608"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.87487584976799,
+          36.86755504380248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "poi_52",
+        "city": "아산시",
+        "district": "",
+        "name": "본가은행나무집",
+        "address_name": "충남 아산시 신정로 681"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.984093126412,
+          36.7781685212351
+        ]
+      }
+    }
+  ]
+}

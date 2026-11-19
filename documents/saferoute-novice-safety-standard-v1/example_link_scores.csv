@@ -1,0 +1,6 @@
+link_id,base_crash_risk,novice_complexity,dynamic_hazard,uncertainty,link_risk,top_reason,is_synthetic
+EXAMPLE_L001,18,10,5,10,13.0,단순 직진 구간,true
+EXAMPLE_L002,42,78,25,10,46.0,비보호 좌회전과 연속 차로 변경,true
+EXAMPLE_L003,65,35,80,15,58.0,우천 중 사고다발 급커브,true
+EXAMPLE_L004,22,55,15,20,28.8,좁은 생활도로와 시야 부족,true
+EXAMPLE_L005,30,20,10,60,25.0,실시간 데이터 오래됨,true

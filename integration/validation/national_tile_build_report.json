@@ -1,0 +1,59 @@
+{
+    "model_id": "T09",
+    "policy_id": "P01",
+    "schema_version": "T09-P01-tiles-v1",
+    "link_stats": {
+        "all_links": 1562356,
+        "scored_links": 1562356,
+        "linestring_links": 1562355,
+        "multipart_links": 1,
+        "scored_lines": 1562357,
+        "excluded_links": 0
+    },
+    "tile_stats": {
+        "tile_count": 1172,
+        "total_rows": 1608323,
+        "unique_geometry_parts": 1562357,
+        "duplicate_tile_rows": 45966,
+        "total_bytes": 102127369,
+        "total_mib": 97.39624881744385
+    },
+    "multipart_links": [
+        {
+            "link_id": "3720460800",
+            "part_count": 2
+        }
+    ],
+    "coordinate_precision_stats": {
+        "decimals_6": 1562356,
+        "decimals_7": 1,
+        "adjusted_parts": 1
+    },
+    "accident_data": {
+        "source_files": {
+            "12_25_bicycle.csv": 5302,
+            "12_25_child.csv": 1300,
+            "12_25_oldman.csv": 6282,
+            "12_25_schoolzone.csv": 646,
+            "13_25_freezing.csv": 685,
+            "15_25_tmzon.csv": 614,
+            "17_25_lg.csv": 5977,
+            "17_25_motorcycle.csv": 2617,
+            "17_25_violt.csv": 7570,
+            "19_25_drunk.csv": 1287,
+            "19_25_pedstrians.csv": 2402,
+            "19_25_truck.csv": 880
+        },
+        "raw_rows": 35562,
+        "unique_coordinates": 33096,
+        "coordinate_crs": "EPSG:5179",
+        "used_in_model": false,
+        "used_in_P01": false,
+        "purpose": "legacy_hotspot_proximity_display"
+    },
+    "source_hashes_unchanged": true,
+    "elapsed_seconds": 776.2839237000153,
+    "build_status": "PASS",
+    "independent_validation": "pending",
+    "deployment_status": "not_deployed"
+}

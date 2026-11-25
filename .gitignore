@@ -14,3 +14,12 @@ archive/
 /runtime/
 /source/
 /training/processed/
+
+# National service generated tile data
+/service/data/tiles/
+
+# National service generated manifest
+/service/data/national_manifest.json
+
+# Legacy service generated data
+/legacy/data.js

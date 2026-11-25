@@ -1,7 +1,7 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const fs=require('node:fs');const vm=require('node:vm');
-const Novice=require('../core');
+const Novice=require('../legacy/core');
 const candidate=(id,d,score=70,extra={})=>({route_id:id,distance_m:d,duration_s:600,road_count:10,guide_count:2,priority:'TIME',geometry:[[[127,36],[127.01,36]]],ai_pending:false,ai_eligible:true,easy_score:score,coverage:.9,...extra});
 test('all caps, boundary, unlimited and highest easy score',()=>{
  const routes=[candidate('short',10000,60),candidate('1.5',15000,70),candidate('2',20000,80),candidate('3',30000,90),candidate('far',40000,99)];
@@ -23,7 +23,7 @@ test('live UI reuses results, preserves selection, excludes detours, accepts lat
  const $=id=>{if(!elements.has(id))elements.set(id,element());return elements.get(id)};
  $('cap').value='2';let calls=0;let finish;
  const context=vm.createContext({performance,Novice,$,document:{createElement:element},zoom:1,pan:[0,0],drawLiveRoute(){},setSearchStatus(){},console,fetch(){calls++;return new Promise(resolve=>finish=resolve)}});
- const app=fs.readFileSync(require('node:path').join(__dirname,'..','app.js'),'utf8');
+ const app=fs.readFileSync(require('node:path').join(__dirname,'..','legacy','app.js'),'utf8');
  vm.runInContext(app.slice(app.indexOf('let liveRoute = null;'),app.indexOf("$('searchRoute').onclick = async")),context);
  context.input=[candidate('a',10000,60),candidate('b',18000,95)];
  vm.runInContext('liveRoutes=input;refreshLivePolicy();selectLiveRoute(1);',context);
@@ -42,7 +42,7 @@ test('live UI reuses results, preserves selection, excludes detours, accepts lat
 });
 
 test('detour selector is visible in live search before search button',()=>{
- const html=fs.readFileSync(require('node:path').join(__dirname,'..','index.html'),'utf8');
+ const html=fs.readFileSync(require('node:path').join(__dirname,'..','legacy','index.html'),'utf8');
  const select=html.indexOf('<select id="cap"');
  assert.equal((html.match(/id="cap"/g)||[]).length,1);
  assert.ok(select>html.indexOf('id="destinationSearch"'));
@@ -57,7 +57,7 @@ function harness(){
  const $=id=>{if(!elements.has(id))elements.set(id,element());return elements.get(id)};
  $('cap').value='2';
  const context=vm.createContext({performance,Novice,$,document:{createElement:element},zoom:1,pan:[0,0],requestVersion:0,selected:null,draw(){},drawLiveRoute(){},setSearchStatus(v){status=v},console:{error(){},info(){}},URLSearchParams,selectedPlaces:{origin:{name:'A',longitude:127,latitude:36},destination:{name:'B',longitude:127.1,latitude:36.1}},fetch(url,options){return new Promise(resolve=>pending.push({url,options,resolve}))}});
- const app=fs.readFileSync(require('node:path').join(__dirname,'..','app.js'),'utf8');
+ const app=fs.readFileSync(require('node:path').join(__dirname,'..','legacy','app.js'),'utf8');
  vm.runInContext(app.slice(app.indexOf('let liveRoute = null;'),app.indexOf('// 실제 경로 Canvas 표시')),context);
  return {context,$,pending,status:()=>status,run:s=>vm.runInContext(s,context)};
 }

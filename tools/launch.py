@@ -19,7 +19,7 @@ if not env.get('KAKAO_REST_API_KEY','').strip():
     if not key:raise SystemExit('No key entered.')
     env['KAKAO_REST_API_KEY']=key
 print('SafeRoute is starting. Stop with Ctrl+C. The key is not saved to a file.')
-child=subprocess.Popen([str(node),str(ROOT/'server.js')],cwd=ROOT,env=env)
+child=subprocess.Popen([str(node),str(ROOT/'legacy/server.js')],cwd=ROOT,env=env)
 try:sys.exit(child.wait())
 except KeyboardInterrupt:
     try:child.wait(timeout=5)

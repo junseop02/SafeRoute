@@ -1,4 +1,8 @@
-# Direct dependencies captured from working Python 3.12.10 environment.
+# SafeRoute development dependencies
+# Python 3.12.10
+# Updated: 2026-11-26
+# Not required for standalone Node.js service.
+
 numpy==2.5.4
 pandas==3.1.1
 geopandas==1.2.0
@@ -9,3 +13,6 @@ scikit-learn==1.9.1
 lightgbm==4.7.0
 pyarrow==26.0.1
 pyogrio==0.13.0
+pyshp==3.1.9
+matplotlib==3.11.2
+psutil==7.2.2

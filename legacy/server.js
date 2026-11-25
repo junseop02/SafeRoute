@@ -7,7 +7,8 @@ const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
 
-const root = __dirname;
+const staticRoot = __dirname;
+const root = path.resolve(__dirname, '..');
 const port = Number(process.env.SAFEROUTE_PORT || 8090);
 
 const types = {
@@ -657,14 +658,14 @@ const server = http.createServer((req, res) => {
     try {
         const rel = decodeURIComponent(pathname);
         file = path.resolve(
-            root, '.' + (rel === '/' ? '/index.html' : rel)
+            staticRoot, '.' + (rel === '/' ? '/index.html' : rel)
         );
     } catch {
         res.writeHead(400);
         return res.end('Bad request');
     }
 
-    if (!file.startsWith(root + path.sep)) {
+    if (!file.startsWith(staticRoot + path.sep)) {
         res.writeHead(403);
         return res.end('Forbidden');
     }

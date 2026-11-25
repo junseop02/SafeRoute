@@ -3,7 +3,7 @@ function harness(){
  const children=[],timers=new Map();let next=0;
  function spawn(){const child=new EventEmitter();child.stdout=new EventEmitter();child.stderr=new EventEmitter();child.stdin=new EventEmitter();child.writes=[];child.stdin.write=s=>child.writes.push(JSON.parse(s));child.kill=()=>{child.killed=true};children.push(child);return child;}
  const context=vm.createContext({Buffer,root:path.resolve(__dirname,'..'),path,spawn,Date,process:{once(){}},console:{error(){}},setTimeout(fn){const id=++next;timers.set(id,fn);return id},clearTimeout(id){timers.delete(id)}});
- const server=fs.readFileSync(path.join(__dirname,'..','server.js'),'utf8');vm.runInContext(server.slice(server.indexOf('let liveWorker = null;'),server.indexOf('const server = http.createServer')),context);
+ const server=fs.readFileSync(path.join(__dirname,'..','legacy','server.js'),'utf8');vm.runInContext(server.slice(server.indexOf('let liveWorker = null;'),server.indexOf('const server = http.createServer')),context);
  return {children,timers,run:s=>vm.runInContext(s,context),fire(id){const fn=timers.get(id);timers.delete(id);fn?.()}};
 }
 const send=(child,data)=>child.stdout.emit('data',Buffer.from(JSON.stringify(data)+'\n'));

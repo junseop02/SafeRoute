@@ -1,0 +1,133 @@
+{
+    "interface_version": "T09-P01-v1.0",
+    "status": "integration_candidate",
+    "model_id": "T09",
+    "policy_id": "P01",
+    "link_data": {
+        "link_id": {
+            "type": "string"
+        },
+        "geometry": {
+            "crs": "EPSG:4326",
+            "coordinate_order": "longitude_latitude"
+        },
+        "hotspot_score": {
+            "type": "number",
+            "range": [
+                0,
+                1
+            ]
+        },
+        "lanes": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "intersection_nodes_200m": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "legacy_hotspot_distance_m": {
+            "type": "number_or_null",
+            "minimum": 0,
+            "used_in_P01": false
+        }
+    },
+    "route_response": {
+        "model_score": {
+            "type": "number_or_null",
+            "range": [
+                0,
+                100
+            ],
+            "meaning": "100_times_P01_burden",
+            "higher_is_better": false
+        },
+        "model_coverage": {
+            "type": "number",
+            "range": [
+                0,
+                1
+            ]
+        },
+        "model_matched_m": {
+            "type": "number",
+            "minimum": 0
+        },
+        "geometry_length_m": {
+            "type": "number",
+            "minimum": 0
+        },
+        "model_wide_ratio": {
+            "type": "number_or_null",
+            "range": [
+                0,
+                1
+            ]
+        },
+        "model_intersections": {
+            "type": "number_or_null",
+            "minimum": 0
+        },
+        "model_hotspot_ratio": {
+            "type": "number_or_null",
+            "range": [
+                0,
+                1
+            ],
+            "meaning": "legacy_hotspot_proximity_ratio",
+            "used_in_P01": false
+        },
+        "matched_link_count": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "model_version": {
+            "type": "string",
+            "value": "T09"
+        },
+        "policy_version": {
+            "type": "string",
+            "value": "P01"
+        },
+        "model_raw_risk": {
+            "type": "number_or_null",
+            "range": [
+                0,
+                1
+            ]
+        },
+        "model_narrow_burden": {
+            "type": "number_or_null",
+            "range": [
+                0,
+                1
+            ]
+        },
+        "model_intersection_burden": {
+            "type": "number_or_null",
+            "range": [
+                0,
+                1
+            ]
+        }
+    },
+    "frontend": {
+        "display_score": "100 - model_score",
+        "higher_score_is_better": true,
+        "recommended_label": "경로 추천 점수",
+        "null_score_policy": "display_unavailable"
+    },
+    "integration_requirements": {
+        "preserve_existing_api_endpoints": true,
+        "preserve_existing_ui_structure": true,
+        "preserve_existing_service_files": true,
+        "new_tile_schema_version_required": true,
+        "multipart_geometry_validation_required": true,
+        "legacy_hotspot_distance_validation_required": true,
+        "javascript_policy_reproduction_required": true,
+        "live_service_validation_required": true
+    },
+    "original_agreement_modified": false,
+    "team_interface_approval": "pending",
+    "deployment_status": "not_deployed"
+}

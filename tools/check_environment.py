@@ -3,7 +3,7 @@ import sys,json,importlib.metadata as metadata,hashlib,argparse
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 parser=argparse.ArgumentParser();parser.add_argument('--full-hash',action='store_true');args=parser.parse_args()
-required=['app.js','core.js','data.js','index.html','style.css','server.js','live_route_features.py','source/links.geojson','data/link_scores.json','models/route_lightgbm.joblib','training/predict_routes.py','training/predict_live_routes.py','training/processed/features.json']
+required=['legacy/app.js','legacy/core.js','legacy/data.js','legacy/index.html','legacy/style.css','legacy/server.js','legacy/live_route_features.py','source/links.geojson','data/link_scores.json','models/route_lightgbm.joblib','training/predict_routes.py','training/predict_live_routes.py','training/processed/features.json']
 errors=[]
 if sys.version_info[:2]!=(3,12):errors.append('Use Python 3.12.')
 for name in required:

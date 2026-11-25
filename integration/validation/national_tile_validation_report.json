@@ -1,0 +1,671 @@
+{
+    "model_id": "T09",
+    "policy_id": "P01",
+    "schema_version": "T09-P01-tiles-v1",
+    "validation_status": "PASS",
+    "source_reconstruction": {
+        "precision_counts": {
+            "6": 1562356,
+            "7": 1
+        },
+        "adjusted_links": [
+            {
+                "link_id": "2640273901",
+                "part_index": 0,
+                "decimals": 7
+            }
+        ],
+        "multipart_links": {
+            "3720460800": 2
+        }
+    },
+    "tile_validation": {
+        "verified_files": 1172,
+        "total_rows": 1608323,
+        "unique_links": 1562356,
+        "unique_parts": 1562357,
+        "duplicate_tile_rows": 45966,
+        "total_bytes": 102127369,
+        "source_row_mismatches": 0,
+        "missing_geometry_parts": 0,
+        "incorrect_tile_placements": 0
+    },
+    "legacy_distance_comparison": {
+        "reference_links": 1542745,
+        "new_links": 1562356,
+        "additional_links": 19611,
+        "exact_matches": 1542745,
+        "within_0_001m": 1542745,
+        "within_0_01m": 1542745,
+        "within_0_1m": 1542745,
+        "within_1m": 1542745,
+        "within_10m": 1542745,
+        "over_10m": 0,
+        "mean_signed_difference_m": 0.0,
+        "mean_absolute_difference_m": 0.0,
+        "median_absolute_difference_m": 0.0,
+        "p95_absolute_difference_m": 0.0,
+        "p99_absolute_difference_m": 0.0,
+        "maximum_absolute_difference_m": 0.0,
+        "legacy_near_150m_count": 277980,
+        "new_near_150m_count": 277980,
+        "near_150m_classification_changed": 0
+    },
+    "legacy_distance_review": "pending",
+    "checks": [
+        {
+            "check": "Input Exists: national_road_features.parquet",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_link_risk_scores.parquet",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_route_policy_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_service_interface_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_manifest.json",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_tile_build_report.json",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_route_policy_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Input Exists: national_service_interface_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Tile Directory Exists",
+            "passed": true
+        },
+        {
+            "check": "Reference Tile Directory Exists",
+            "passed": true
+        },
+        {
+            "check": "Validation Report Not Exists",
+            "passed": true
+        },
+        {
+            "check": "Distance Report Not Exists",
+            "passed": true
+        },
+        {
+            "check": "Manifest Model ID",
+            "passed": true
+        },
+        {
+            "check": "Manifest Policy ID",
+            "passed": true
+        },
+        {
+            "check": "Manifest Schema Version",
+            "passed": true
+        },
+        {
+            "check": "Build Status",
+            "passed": true
+        },
+        {
+            "check": "Manifest and Build Link Stats",
+            "passed": true
+        },
+        {
+            "check": "Manifest and Build Tile Stats",
+            "passed": true
+        },
+        {
+            "check": "Manifest Coordinate CRS",
+            "passed": true
+        },
+        {
+            "check": "Source Coordinate CRS",
+            "passed": true
+        },
+        {
+            "check": "Coordinate Order",
+            "passed": true
+        },
+        {
+            "check": "Base Coordinate Precision",
+            "passed": true
+        },
+        {
+            "check": "Maximum Coordinate Precision",
+            "passed": true
+        },
+        {
+            "check": "Adaptive Precision Mode",
+            "passed": true
+        },
+        {
+            "check": "Precision Stats Consistency",
+            "passed": true
+        },
+        {
+            "check": "Tile Size",
+            "passed": true
+        },
+        {
+            "check": "Tile Padding",
+            "passed": true
+        },
+        {
+            "check": "Compression",
+            "passed": true
+        },
+        {
+            "check": "Raw Score Range",
+            "passed": true
+        },
+        {
+            "check": "Raw Score Normalization",
+            "passed": true
+        },
+        {
+            "check": "Score Meaning",
+            "passed": true
+        },
+        {
+            "check": "Policy Not Applied to Link Tiles",
+            "passed": true
+        },
+        {
+            "check": "Tile Row Schema",
+            "passed": true
+        },
+        {
+            "check": "Geometry Identity",
+            "passed": true
+        },
+        {
+            "check": "National Link Count",
+            "passed": true
+        },
+        {
+            "check": "National Scored Link Count",
+            "passed": true
+        },
+        {
+            "check": "No Excluded Links",
+            "passed": true
+        },
+        {
+            "check": "Geometry Part Count",
+            "passed": true
+        },
+        {
+            "check": "Policy Model",
+            "passed": true
+        },
+        {
+            "check": "Policy ID",
+            "passed": true
+        },
+        {
+            "check": "Policy Weights",
+            "passed": true
+        },
+        {
+            "check": "Policy Intersection Reference",
+            "passed": true
+        },
+        {
+            "check": "Interface Model",
+            "passed": true
+        },
+        {
+            "check": "Interface Policy",
+            "passed": true
+        },
+        {
+            "check": "Policy Copy Hash",
+            "passed": true
+        },
+        {
+            "check": "Interface Copy Hash",
+            "passed": true
+        },
+        {
+            "check": "Legacy Accident Distance Not Used in Model",
+            "passed": true
+        },
+        {
+            "check": "Legacy Accident Distance Not Used in P01",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_road_features.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_road_features.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_link_risk_scores.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_link_risk_scores.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_route_policy_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_route_policy_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_service_interface_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_service_interface_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_manifest.json",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_manifest.json",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_bicycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_bicycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_child.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_child.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_oldman.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_oldman.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_schoolzone.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_schoolzone.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 13_25_freezing.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 13_25_freezing.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 15_25_tmzon.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 15_25_tmzon.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 17_25_lg.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 17_25_lg.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 17_25_motorcycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 17_25_motorcycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 17_25_violt.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 17_25_violt.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 19_25_drunk.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 19_25_drunk.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 19_25_pedstrians.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 19_25_pedstrians.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 19_25_truck.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 19_25_truck.csv",
+            "passed": true
+        },
+        {
+            "check": "Accident CSV Count",
+            "passed": true
+        },
+        {
+            "check": "Accident Source Counts",
+            "passed": true
+        },
+        {
+            "check": "Accident Raw Rows",
+            "passed": true
+        },
+        {
+            "check": "Accident Unique Coordinates",
+            "passed": true
+        },
+        {
+            "check": "Accident Projected Coordinates",
+            "passed": true
+        },
+        {
+            "check": "Source Road Row Count",
+            "passed": true
+        },
+        {
+            "check": "Source Score Row Count",
+            "passed": true
+        },
+        {
+            "check": "Source Score IDs Unique",
+            "passed": true
+        },
+        {
+            "check": "Source Scores Valid",
+            "passed": true
+        },
+        {
+            "check": "All Source Links Reconstructed",
+            "passed": true
+        },
+        {
+            "check": "Source Link and Score IDs Match",
+            "passed": true
+        },
+        {
+            "check": "Expected Geometry Parts",
+            "passed": true
+        },
+        {
+            "check": "Expected Six Decimal Parts",
+            "passed": true
+        },
+        {
+            "check": "Expected Seven Decimal Parts",
+            "passed": true
+        },
+        {
+            "check": "Expected Precision Adjusted Link",
+            "passed": true
+        },
+        {
+            "check": "Expected Multipart Link",
+            "passed": true
+        },
+        {
+            "check": "Actual Tile File Count",
+            "passed": true
+        },
+        {
+            "check": "Manifest Tile Count",
+            "passed": true
+        },
+        {
+            "check": "No Temporary Tile Files",
+            "passed": true
+        },
+        {
+            "check": "Actual and Manifest Tile Keys",
+            "passed": true
+        },
+        {
+            "check": "All Tile Hashes and Sizes Valid",
+            "passed": true
+        },
+        {
+            "check": "All Tile Rows Valid",
+            "passed": true
+        },
+        {
+            "check": "All Source Geometry Parts Present",
+            "passed": true
+        },
+        {
+            "check": "All Source Links Present",
+            "passed": true
+        },
+        {
+            "check": "All Expected Tile Placements Present",
+            "passed": true
+        },
+        {
+            "check": "Duplicate Tile Row Count",
+            "passed": true
+        },
+        {
+            "check": "Total Compressed Bytes",
+            "passed": true
+        },
+        {
+            "check": "Multipart Part Zero Present",
+            "passed": true
+        },
+        {
+            "check": "Multipart Part One Present",
+            "passed": true
+        },
+        {
+            "check": "Precision Adjusted Link Present",
+            "passed": true
+        },
+        {
+            "check": "Reference Tile Count",
+            "passed": true
+        },
+        {
+            "check": "Reference Unique Link Count",
+            "passed": true
+        },
+        {
+            "check": "All Reference Links in New Tiles",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_road_features.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_road_features.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_link_risk_scores.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_link_risk_scores.parquet",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_route_policy_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_route_policy_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_service_interface_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_service_interface_P01.json",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: national_manifest.json",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: national_manifest.json",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_bicycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_bicycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_child.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_child.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_oldman.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_oldman.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 12_25_schoolzone.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 12_25_schoolzone.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 13_25_freezing.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 13_25_freezing.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 15_25_tmzon.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 15_25_tmzon.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 17_25_lg.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 17_25_lg.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 17_25_motorcycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 17_25_motorcycle.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 17_25_violt.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 17_25_violt.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 19_25_drunk.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 19_25_drunk.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 19_25_pedstrians.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 19_25_pedstrians.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Exists: 19_25_truck.csv",
+            "passed": true
+        },
+        {
+            "check": "Source Hash: 19_25_truck.csv",
+            "passed": true
+        },
+        {
+            "check": "Manifest Unchanged",
+            "passed": true
+        },
+        {
+            "check": "Build Report Unchanged",
+            "passed": true
+        }
+    ],
+    "passed_checks": 151,
+    "total_checks": 151,
+    "manifest_sha256": "c1ab35d89950ca69055c1b6ddd7bcbeb4523a05d69fb2f834046bb65ba4266c1",
+    "build_report_sha256": "2aafb396ffd23da4fa71c07119200b977400757162fc8c513e58ba4e1e43c43d",
+    "source_hashes_unchanged": true,
+    "elapsed_seconds": 137.64397510001436,
+    "model_retrained": false,
+    "policy_modified": false,
+    "tiles_modified": false,
+    "deployment_status": "not_deployed"
+}

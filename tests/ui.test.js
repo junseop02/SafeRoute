@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
-const app=fs.readFileSync(path.join(__dirname,'..','app.js'),'utf8');
+const app=fs.readFileSync(path.join(__dirname,'..','legacy','app.js'),'utf8');
 function setup(){
  function element(tag){return {tag,children:[],attrs:{},style:{},textContent:'',setAttribute(k,v){this.attrs[k]=v},append(...x){this.children.push(...x)},replaceChildren(...x){this.children=x},addEventListener(k,fn){this[k]=fn}}}
  const nodes=new Map();const $=id=>{if(!nodes.has(id))nodes.set(id,element('div'));return nodes.get(id)};

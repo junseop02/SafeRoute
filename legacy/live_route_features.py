@@ -15,7 +15,7 @@ from pyproj import Transformer
 from shapely import transform, line_interpolate_point, distance as geometry_distance
 from shapely.geometry import LineString
 
-PROJECT_ROOT = Path(__file__).resolve().parent
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 LINK_PATH = PROJECT_ROOT / "source" / "links.geojson"
 TRANSFORMER = Transformer.from_crs("EPSG:4326", "EPSG:5179", always_xy=True)
 

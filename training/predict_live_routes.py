@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
-from live_route_features import load_road_links, match_route_geometry
+from legacy.live_route_features import load_road_links, match_route_geometry
 import joblib
 import numpy as np
 import pandas as pd

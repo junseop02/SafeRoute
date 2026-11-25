@@ -1,12 +1,12 @@
-const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path');const Novice=require('../core');
+const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path');const Novice=require('../legacy/core');
 function harness(){
- const ids=[...fs.readFileSync(path.join(__dirname,'..','index.html'),'utf8').matchAll(/id="([^"]+)"/g)].map(x=>x[1]);const nodes=new Map(),pending=[],timers=new Map(),frames=[];let timerId=0;const canvasCalls=[];
+ const ids=[...fs.readFileSync(path.join(__dirname,'..','legacy','index.html'),'utf8').matchAll(/id="([^"]+)"/g)].map(x=>x[1]);const nodes=new Map(),pending=[],timers=new Map(),frames=[];let timerId=0;const canvasCalls=[];
  function element(tag){return {tag,children:[],value:'',checked:true,disabled:false,attrs:{},style:{},listeners:{},className:'',_text:'',get textContent(){return this._text+this.children.map(x=>x.textContent||'').join('')},set textContent(v){this._text=String(v);this.children=[]},classList:{toggle(){}},setAttribute(k,v){this.attrs[k]=v},append(...x){this.children.push(...x)},add(x){this.children.push(x);if(!this.value)this.value=x.value},replaceChildren(...x){this.children=x;this._text='';if(tag==='select')this.value=x[0]?.value||''},addEventListener(k,f){(this.listeners[k]??=[]).push(f)},dispatch(k,e={}){for(const f of this.listeners[k]||[])f(e);return this['on'+k]?.(e)},querySelectorAll(){return this.children},getBoundingClientRect(){return {width:900,height:500,left:0,top:0}},setPointerCapture(){},getContext(){return new Proxy({},{get(t,k){if(k in t)return t[k];return (...args)=>canvasCalls.push({name:k,args})},set(t,k,v){t[k]=v;return true}})}}}
  for(const id of ids)nodes.set(id,element(['origin','destination','cap'].includes(id)?'select':'div'));
  nodes.get('cap').value='2';
  const D={points:[],routes:[],geometry:{},roads:[[[127,36],[127.1,36.1]]],accidents:[{'경도':127.05,'위도':36.05}],profile:{}};
  const context=vm.createContext({window:{SAFEROUTE_DATA:D,devicePixelRatio:1},document:{getElementById:id=>nodes.get(id),createElement:element},Novice,Option:function(text,value){this.textContent=text;this.value=value},console:{log(){},info(){},error(){}},URL,URLSearchParams,Blob,performance,fetch(url,options){return new Promise(resolve=>pending.push({url,options,resolve}))},setTimeout(fn){const id=++timerId;timers.set(id,fn);return id},clearTimeout(id){timers.delete(id)},requestAnimationFrame(fn){frames.push(fn);return frames.length}});
- vm.runInContext(fs.readFileSync(path.join(__dirname,'..','app.js'),'utf8'),context);
+ vm.runInContext(fs.readFileSync(path.join(__dirname,'..','legacy','app.js'),'utf8'),context);
  return {context,nodes,pending,timers,canvasCalls,D,run:s=>vm.runInContext(s,context),flushFrames(){while(frames.length)frames.shift()()}};
 }
 const tick=()=>new Promise(r=>setImmediate(r));

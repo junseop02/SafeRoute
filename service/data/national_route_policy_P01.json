@@ -1,0 +1,94 @@
+{
+    "model_id": "T09",
+    "policy_id": "P01",
+    "policy_version": "P01-v1.0",
+    "policy_status": "selected_candidate",
+    "model_type": "LightGBM_binary_classifier",
+    "features": [
+        "lanes",
+        "max_spd",
+        "road_rank",
+        "length",
+        "n_branch",
+        "n_intersect_200m",
+        "intersection_nodes_200m"
+    ],
+    "n_estimators": 269,
+    "training_rows": 1123804,
+    "national_link_count": 1562356,
+    "score_meaning": "historical_hotspot_membership_score",
+    "model_score_range": [
+        0,
+        1
+    ],
+    "normalization": "raw",
+    "aggregation": "matched_length_weighted_mean",
+    "weights": {
+        "risk": 0.8,
+        "narrow": 0.1,
+        "intersection": 0.1
+    },
+    "wide_road_min_lanes": 2,
+    "intersection_feature": "intersection_nodes_200m",
+    "intersection_reference": 100.0,
+    "intersection_clipping": [
+        0,
+        1
+    ],
+    "burden_formula": "0.8*R + 0.1*(1-W) + 0.1*clip(C/100,0,1)",
+    "display_score_formula": "100*(1-B)",
+    "display_score_range": [
+        0,
+        100
+    ],
+    "higher_display_score_is_better": true,
+    "minimum_coverage": 0.8,
+    "minimum_distinct_candidates": 3,
+    "detour_basis": "shortest_candidate_distance",
+    "detour_options": [
+        1.5,
+        2.0,
+        3.0,
+        "unlimited"
+    ],
+    "proposed_default_detour_factor": 2.0,
+    "unlimited_detour_evaluated": false,
+    "ranking": [
+        "burden_ascending",
+        "distance_ascending",
+        "duration_ascending",
+        "route_id_ascending"
+    ],
+    "offline_burden_rounding_decimals": 12,
+    "missing_score_policy": "do_not_impute_zero",
+    "insufficient_coverage_policy": "no_score",
+    "insufficient_candidates_policy": "no_recommendation",
+    "classification_threshold": 0.24521679512779193,
+    "classification_threshold_used_for_ranking": false,
+    "source_sha256": {
+        "models/national_accident_risk/national_accident_risk_lightgbm_final.joblib": "bf6005fb149b22ac52803ec230d21022d82ba33d1d08060ca84823040e227512",
+        "data/national_accident_risk/processed/results/national_final_frozen_config.json": "3e19c677f00b306b82d4195352068f5f40ebdfbf9aa53a738c252bd3b217e6c6",
+        "data/national_accident_risk/processed/national_link_risk_scores.parquet": "e6374e6e2824d581f6a161cd2a59f5d5a19a3718a3e7cad72819f53a680ce89e",
+        "data/national_accident_risk/processed/results/national_link_risk_scores_metadata.json": "a3994e764fefb290a29b46bba4a2acfc824afe0cbd619656d37a93f818916a06",
+        "data/national_accident_risk/processed/results/national_final_policy_routes.parquet": "ea99edfaba421cb8b4c4c5fbb8b459a2c78f57c94454aec66c474b8bc66bcb45",
+        "data/national_accident_risk/processed/results/national_final_policy_selections.parquet": "d9bbc6d5b374116c950d02c51fee7e11d97ad2dd54513f635f0d0c977c00c85d",
+        "data/national_accident_risk/processed/results/national_final_policy_config.json": "c29c8cc0ea81ff98a3b9b711d1d06615cad6a299f5165a0a9f734b1aa4f610a6"
+    },
+    "model_sha256": "bf6005fb149b22ac52803ec230d21022d82ba33d1d08060ca84823040e227512",
+    "policy_selected": true,
+    "selection_authority": "user_confirmed",
+    "route_score_formula_selected": true,
+    "additional_model_training": false,
+    "test_re_evaluated": false,
+    "deployment_status": "not_deployed",
+    "limitations": [
+        "Not an actual accident probability.",
+        "Not a measured novice driver difficulty.",
+        "Weights are policy parameters, not learned.",
+        "Route comparison used Cheonan-Asan routes.",
+        "Historical hotspot data has limited types.",
+        "Road network and accident periods differ.",
+        "Latest JavaScript matcher not rerun.",
+        "Actual nationwide service not validated."
+    ]
+}
